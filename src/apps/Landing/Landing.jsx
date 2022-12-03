@@ -3,10 +3,10 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import SocialMediaIcons from "../../components/SocialMediaIcons";
 import { Link } from "react-scroll";
-// import CV from "../../../public/CV.pdf";
 import { FaDownload } from "react-icons/fa";
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreen = useMediaQuery("(min-width:1050px)");
+
   return (
     <section
       id="home"
@@ -69,7 +69,7 @@ const Landing = ({ setSelectedPage }) => {
             Contact Me
           </Link>
           <a
-            href={"CV.pdf"}
+            href="CV.pdf"
             target="_blank"
             className="rounded-sm bg-gradient-rainblue py-0.5 px-0.5 hover:scale-110 transition duration-500"
           >
