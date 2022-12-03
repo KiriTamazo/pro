@@ -15,7 +15,7 @@ const Landing = ({ setSelectedPage }) => {
       {/* Image Section */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16  md:mt-8">
         <img
-          src={"image/profile1.png"}
+          src="image/main.png"
           className="max-w-[350px]  md:max-w-[550px] max-h-[550px]"
           alt="profile"
         />
