@@ -3,6 +3,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import DesktopNav from "./DesktopNav";
 import Sidebar from "./Sidebar";
 import { FaBars } from "react-icons/fa";
+import { AnimatePresence } from "framer-motion";
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggle, setIsMenuToggle] = useState(false);
@@ -32,14 +33,16 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           )}
         </nav>
       </header>
+      <AnimatePresence>
       {!isAboveSmallScreens && isMenuToggle && (
-        <Sidebar
-          setIsMenuToggle={setIsMenuToggle}
-          isMenuToggle={isMenuToggle}
-          selectedPage={selectedPage}
-          setSelectedPage={setSelectedPage}
-        />
-      )}
+          <Sidebar
+            setIsMenuToggle={setIsMenuToggle}
+            isMenuToggle={isMenuToggle}
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
+          )}
+          </AnimatePresence>
     </>
   );
 };
