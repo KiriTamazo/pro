@@ -43,7 +43,7 @@ function App() {
         )} */}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
-      <LineGradient />
+      <LineGradient width=" md:w-auto" />
       <MySkills />
       <LineGradient />
       <Projects />

@@ -13,7 +13,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <>
       <header
-        className={` ${navbarBackground} z-40 w-full fixed top-0 left-0 py-6`}
+        className={` ${navbarBackground} z-40 w-full fixed top-0 left-0 py-3 md:py-6`}
       >
         <nav className="flex items-center justify-between mx-auto w-5/6">
           <h4 className="font-playfair text-3xl font-bold">LWHA</h4>
@@ -33,16 +33,15 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           )}
         </nav>
       </header>
-      <AnimatePresence>
-      {!isAboveSmallScreens && isMenuToggle && (
-          <Sidebar
-            setIsMenuToggle={setIsMenuToggle}
-            isMenuToggle={isMenuToggle}
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-          />
-          )}
-          </AnimatePresence>
+
+      {!isAboveSmallScreens && (
+        <Sidebar
+          setIsMenuToggle={setIsMenuToggle}
+          isMenuToggle={isMenuToggle}
+          selectedPage={selectedPage}
+          setSelectedPage={setSelectedPage}
+        />
+      )}
     </>
   );
 };

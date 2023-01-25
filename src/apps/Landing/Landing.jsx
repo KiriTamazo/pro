@@ -16,7 +16,7 @@ const Landing = ({ setSelectedPage }) => {
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16  md:mt-8">
         <img
           src="image/main.png"
-          className="max-w-[350px]  md:max-w-[550px] max-h-[550px]"
+          className="max-w-[350px] md:max-w-[400px]  lg:max-w-[500px] max-h-[500px]"
           alt="profile"
         />
       </div>
@@ -35,7 +35,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <p className="text-center md:text-start"> Hello There! </p>
 
-          <p className="text-6xl font-playfair z-10 text-center md:text-start leading-[4.5rem]">
+          <p className="lg:text-6xl text-4xl font-playfair z-10 text-center md:text-start leading-[4.5rem]">
             I'm La Woon <br />
             <span
               className="text-yellow mt-4

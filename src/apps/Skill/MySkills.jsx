@@ -1,7 +1,6 @@
 import React from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-// import profile from "../../../public/image/profile.png";
 import LineGradient from "../../components/LineGradient";
 
 const MySkills = () => {
@@ -24,7 +23,7 @@ const MySkills = () => {
             <p className="font-playfair font-semibold text-4xl mb-5">
               My <span className="text-red">Skills</span>
             </p>
-            <LineGradient width="w-1/3" />
+            <LineGradient width="w-[10rem]" />
             <p className="mt-10 mb-7">
               I want to be a Junior React Front-end Developer and seeking an
               opportunity to extend my web developing and web designing skills &
@@ -40,14 +39,14 @@ const MySkills = () => {
             {isAboveMediumScreen ? (
               <div className=" before:rounded-md relative z-0 ml-20 before:absolute before:-top-10 before:-left-20  before:w-full  before:h-full before:border-2 before-border-blue before:z-[-1] ">
                 <img
-                  src={"image/profile.png"}
+                  src="./image/profile.png"
                   alt="skills"
-                  className="z-10 bg-[#00b5ee] md:max-w-[550px] sm:max-w-[450px] rounded-md"
+                  className="z-10 bg-[#00b5ee] lg:max-w-[500px] sm:max-w-[450px] rounded-md"
                 />
               </div>
             ) : (
               <img
-                src={"image/profile.png"}
+                src="./image/profile.png"
                 alt="profile"
                 className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] bg-gradient-rainblue rounded-t-[400px] "
               />
@@ -55,10 +54,13 @@ const MySkills = () => {
           </div>
         </div>
         {/* Skills */}
-        <div className="md:flex md:justify-between mt-16 gap-32">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:justify-between mt-16 
+        gap-16 md:gap-32"
+        >
           {/* Experiences */}
           <motion.div
-            className="md:w-1/3 mt-10"
+            className=" mt-10"
             initial="hidden"
             whileInView="visible"
             viewport={{ onece: true, amount: 0.5 }}
@@ -78,7 +80,7 @@ const MySkills = () => {
               <div className="w-full md:w-3/4 h-full bg-blue absolute right-0 top-0 z-[-1]">
                 <img
                   className="w-full h-full md:max-h-[160px] brightness-50"
-                  src="../../../public/image/ngs-dashboard.png"
+                  src="./image/ngs-dashboard.png"
                   alt="ngs-dashboard"
                 />
               </div>
@@ -92,7 +94,7 @@ const MySkills = () => {
           </motion.div>
           {/* Innovative */}
           <motion.div
-            className="md:w-1/3 mt-10"
+            className=" mt-10"
             initial="hidden"
             whileInView="visible"
             viewport={{ onece: true, amount: 0.5 }}
@@ -119,7 +121,7 @@ const MySkills = () => {
           </motion.div>
           {/* Imaginative */}
           <motion.div
-            className="md:w-1/3 mt-10"
+            className=" mt-10"
             initial="hidden"
             whileInView="visible"
             viewport={{ onece: true, amount: 0.5 }}
