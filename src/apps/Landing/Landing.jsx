@@ -33,7 +33,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <p className="text-center md:text-start"> Hello There! </p>
 
-          <p className="lg:text-6xl text-4xl font-playfair z-10 text-center md:text-start leading-[4.5rem]">
+          <p className="lg:text-6xl text-4xl font-playfair z-10 text-center md:text-start leading-[3rem]">
             I'm La Woon <br />
             <span
               className="text-yellow mt-4
