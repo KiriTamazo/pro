@@ -7,10 +7,11 @@ import {
   FaJs,
   FaReact,
   FaCss3,
+  FaNodeJs,
 } from "react-icons/fa";
 // import marketing from "/marketing.jpeg";
 
-import { SiTailwindcss, SiRedux } from "react-icons/si";
+import { SiTailwindcss, SiRedux, SiMongodb, SiExpress } from "react-icons/si";
 export const links = ["Home", "Skills", "Projects", "Contact"];
 export const socialLinks = [
   {
@@ -34,6 +35,17 @@ export const socialLinks = [
   },
 ];
 export const projects = [
+  {
+    icons: [
+      <SiMongodb color="#0cd45b" />,
+      <SiExpress color="#303030" />,
+      <FaReact color="#61dbfb" />,
+      <FaNodeJs color="#3c873a" />,
+    ],
+    title: "Allure",
+    url: "https://allure-5atl.onrender.com/",
+    img: "./image/allure.png",
+  },
   {
     icons: [
       <FaHtml5 color="#e34c46" />,

@@ -1,7 +1,6 @@
 import { links } from "../../data/data";
 import Link from "./Link";
 import { FaTimes } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 const Sidebar = ({
   setIsMenuToggle,

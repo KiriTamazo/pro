@@ -11,7 +11,6 @@ import Footer from "./apps/Footer/Footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState();
-  const isAboveMediumScreen = useMediaQuery("(min-width:1060px)");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   useEffect(() => {
     const handleScroll = () => {

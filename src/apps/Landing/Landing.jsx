@@ -5,8 +5,6 @@ import SocialMediaIcons from "../../components/SocialMediaIcons";
 import { Link } from "react-scroll";
 import { FaDownload } from "react-icons/fa";
 const Landing = ({ setSelectedPage }) => {
-  const isAboveMediumScreen = useMediaQuery("(min-width:1050px)");
-
   return (
     <section
       id="home"

@@ -3,7 +3,6 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import DesktopNav from "./DesktopNav";
 import Sidebar from "./Sidebar";
 import { FaBars } from "react-icons/fa";
-import { AnimatePresence } from "framer-motion";
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggle, setIsMenuToggle] = useState(false);

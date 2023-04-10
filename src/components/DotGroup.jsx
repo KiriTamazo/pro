@@ -1,9 +1,9 @@
 import { links } from "../data/data";
-import { Link as Links, scrollSpy, scroller } from "react-scroll";
+import { Link as Links, scroller } from "react-scroll";
 import { useEffect } from "react";
 
 const DotGroup = ({ selectedPage, setSelectedPage }) => {
-  const selectedStyles = `relative bg-yellow before:absolute before:w-6 before:h-6 before:rounded-full before:border-2 before:border-yellow before:left-[-50%] before:top-[-50%]`;
+  // const selectedStyles = `relative bg-yellow before:absolute before:w-6 before:h-6 before:rounded-full before:border-2 before:border-yellow before:left-[-50%] before:top-[-50%]`;
   const x = scroller.getActiveLink();
   useEffect(() => {
     console.log(x);

@@ -55,7 +55,7 @@ const MySkills = () => {
         </div>
         {/* Skills */}
         <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:justify-between mt-16 
+          className="grid grid-cols-1 md:grid-cols-2  md:justify-between mt-16 
         gap-16 md:gap-32"
         >
           {/* Experiences */}
@@ -120,7 +120,7 @@ const MySkills = () => {
             </p>
           </motion.div>
           {/* Imaginative */}
-          <motion.div
+          {/* <motion.div
             className=" mt-10"
             initial="hidden"
             whileInView="visible"
@@ -145,7 +145,7 @@ const MySkills = () => {
               <br /> My search for opportunities to complete the experience is
               ongoing.
             </p>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
     </div>
