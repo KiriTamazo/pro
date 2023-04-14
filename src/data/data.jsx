@@ -3,16 +3,24 @@ import {
   FaGithub,
   FaFacebookSquare,
   FaInstagram,
-  FaHtml5,
-  FaJs,
   FaReact,
-  FaCss3,
   FaNodeJs,
+  FaNode,
 } from "react-icons/fa";
-// import marketing from "/marketing.jpeg";
-
-import { SiTailwindcss, SiRedux, SiMongodb, SiExpress } from "react-icons/si";
-export const links = ["Home", "Skills", "Projects", "Contact"];
+import {
+  SiBootstrap,
+  SiCss3,
+  SiFirebase,
+  SiHtml5,
+  SiJavascript,
+  SiJquery,
+  SiMaterialui,
+  SiMongodb,
+  SiRedux,
+  SiSass,
+  SiTailwindcss,
+} from "react-icons/si";
+export const links = ["Home", "Skills", "Abilities", "Projects", "Contact"];
 export const socialLinks = [
   {
     id: 1,
@@ -36,64 +44,103 @@ export const socialLinks = [
 ];
 export const projects = [
   {
-    icons: [
-      <SiMongodb color="#0cd45b" />,
-      <SiExpress color="#303030" />,
-      <FaReact color="#61dbfb" />,
-      <FaNodeJs color="#3c873a" />,
-    ],
     title: "Allure",
-    url: "https://allure-5atl.onrender.com/",
+    url: [
+      "https://allure-5atl.onrender.com/",
+      "https://github.com/KiriTamazo/Mern-Ecommerce-Website",
+    ],
     img: "./image/allure.png",
   },
   {
-    icons: [
-      <FaHtml5 color="#e34c46" />,
-      <FaCss3 color="#264de4" />,
-      <FaJs color="#f0db4f" />,
-    ],
     title: "Marketing",
-    url: "https://kiritamazo.github.io/ProfileWebsite/",
-    img: "./image/marketing.jpeg",
+    url: [
+      "https://kiritamazo.github.io/Marketing/",
+      "https://github.com/KiriTamazo/Marketing",
+    ],
+    img: "./image/marketing.png",
   },
   {
-    icons: [
-      <FaHtml5 color="#e34c46" />,
-      <FaCss3 color="#264de4" />,
-      <FaJs color="#f0db4f" />,
-    ],
-    title: "Tasty",
-    url: "https://kiritamazo.github.io/Tasty.github.io/",
-    img: "./image/tasty.jpeg",
-  },
-  {
-    icons: [
-      <FaHtml5 color="#e34c46" />,
-      <FaCss3 color="#264de4" />,
-      <FaJs color="#f0db4f" />,
-    ],
     title: "MeteorV2",
-    url: "https://kiritamazo.github.io/MeteorV2/",
-    img: "./image/meteor.jpeg",
+    url: [
+      "https://kiritamazo.github.io/MeteorV2/",
+      "https://github.com/KiriTamazo/Meteor.github.io",
+    ],
+    img: "./image/meteor.png",
   },
   {
-    icons: [
-      <FaHtml5 color="#e34c46" />,
-      <FaCss3 color="#264de4" />,
-      <FaJs color="#f0db4f" />,
-    ],
     title: "Omnifood",
-    url: "https://kiritamazo.github.io/OminiFood.github.io/#",
-    img: "./image/ominifood.jpeg",
+    url: [
+      "https://kiritamazo.github.io/OminiFood.github.io/",
+      "https://github.com/KiriTamazo/OminiFood.github.io",
+    ],
+    img: "./image/ominifood.png",
   },
   {
-    icons: [
-      <FaReact color="#61dbfb" />,
-      <SiTailwindcss color="#38bdf8" />,
-      <SiRedux color="#764abc" />,
+    title: "Nike Store Clone",
+    url: [
+      "https://nike-store-clone-gamma.vercel.app/",
+      "https://github.com/KiriTamazo/nike-store",
     ],
-    title: "Nice Store Clone",
-    url: "https://nike-store-clone-gamma.vercel.app/",
-    img: "./image/nice-clone.jpeg",
+    img: "./image/nike-clone.png",
+  },
+];
+
+export const ablilities = [
+  {
+    icon: <FaReact color="#61DBFB" className="w-8 h-8" />,
+    title: "ReactJS",
+  },
+  {
+    icon: <FaNodeJs color="#68A063" className="w-8 h-8" />,
+    title: "ExpressJS",
+  },
+  {
+    icon: <FaNode color="#3C873A" className="w-8 h-8" />,
+    title: "NodeJS",
+  },
+  {
+    icon: <SiRedux color="#764abc " className="w-8 h-8" />,
+    title: "Redux",
+  },
+  {
+    icon: <SiFirebase color="#FFCB2B" className="w-8 h-8" />,
+    title: "Firebase",
+  },
+  {
+    icon: <SiMaterialui color="#007fff" className="w-8 h-8" />,
+    title: "Mui",
+  },
+
+  {
+    icon: <SiBootstrap color="#4606F2" className="w-8 h-8" />,
+    title: "Bootstrap",
+  },
+  {
+    icon: <SiSass color="#cc6699 " className="w-8 h-8" />,
+    title: "Sass",
+  },
+  {
+    icon: <SiHtml5 color="#F06529" className="w-8 h-8" />,
+    title: "HTML5",
+  },
+  {
+    icon: <SiCss3 color="#2965f1 " className="w-8 h-8" />,
+    title: "Css3",
+  },
+  {
+    icon: <SiJavascript color="#F0DB4F" className="w-8 h-8" />,
+    title: "Javascript",
+  },
+  {
+    icon: <SiMongodb color="#589636" className="w-8 h-8" />,
+    title: "MongoDB",
+  },
+  {
+    icon: <SiJquery color="#0769AD " className="w-8 h-8" />,
+    title: "Jquery",
+  },
+  {
+    icon: <SiTailwindcss color="#007fff" className="w-8 h-8" />,
+    title: "Tailwindcss",
   },
 ];

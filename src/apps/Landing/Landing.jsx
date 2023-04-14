@@ -1,5 +1,6 @@
 import React from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import Typist from "react-text-typist";
 import { motion } from "framer-motion";
 import SocialMediaIcons from "../../components/SocialMediaIcons";
 import { Link } from "react-scroll";
@@ -8,23 +9,33 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10"
+      className="md:flex md:justify-between md:items-center  md:h-full gap-16 py-10"
     >
       {/* Image Section */}
-      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16  md:mt-8">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.5 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: 50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className="md:order-2 flex justify-center basis-3/5 z-10 mt-16  md:mt-8"
+      >
         <img
-          src="image/main.png"
-          className="max-w-[350px] md:max-w-[400px]  lg:max-w-[500px] max-h-[500px]"
+          src="image/profile-vector.png"
+          className="max-w-[350px] md:max-w-[400px]  xl:max-w-[500px] max-h-[500px]"
           alt="profile"
         />
-      </div>
+      </motion.div>
       {/* Main section */}
       <div className="z-30 basis-2/5 mt-12 md:mt:32">
         {/* Heading */}
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ onece: true, amount: 0.5 }}
+          viewport={{ amount: 0.5 }}
           transition={{ duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
@@ -33,7 +44,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <p className="text-center md:text-start"> Hello There! </p>
 
-          <p className="lg:text-6xl text-4xl font-playfair z-10 text-center md:text-start leading-[3rem]">
+          <p className="xl:text-6xl text-4xl font-playfair z-10 text-center md:text-start leading-[3rem]">
             I'm La Woon <br />
             <span
               className="text-yellow mt-4
@@ -42,13 +53,24 @@ const Landing = ({ setSelectedPage }) => {
               Htet Aung
             </span>
           </p>
-          <p className="mt-5 mb-7 text-lg text-center md:text-start">
-            Junior <span className="text-blue"> React</span> Developer
+
+          <p className="font-semibold font-opensans text-xl mt-5 mb-7  text-center md:text-start">
+            I Am{" "}
+            <Typist
+              className="text-blue"
+              typingSpeed="100"
+              deletingSpeed="100"
+              cursorSmooth
+              sentences={[
+                "Junior React Developer",
+                " Into Front-End Development",
+              ]}
+            />
           </p>
         </motion.div>
 
         <motion.div
-          className="flex mt-5 gap-8 justify-center md:justify-start"
+          className="flex flex-col md:flex-row mt-5 gap-8 justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ onece: true, amount: 0.5 }}
@@ -61,31 +83,31 @@ const Landing = ({ setSelectedPage }) => {
           <Link
             smooth={true}
             duration={500}
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3   px-7  font-semibold hover:scale-110 hover:text-white transition duration-500 cursor-pointer"
+            className="bg-blue md:text-start text-center text-deep-blue rounded-sm py-3   px-7  font-semibold hover:scale-110 hover:text-white transition duration-500 cursor-pointer"
             to="contact"
           >
             Contact Me
           </Link>
           <a
-            href="La-Woon-Htet-Aung-CV.pdf"
+            href="LWHA_Resume.pdf"
             target="_blank"
             download
-            className="rounded-sm bg-gradient-rainblue py-0.5 px-0.5 hover:scale-110 transition duration-500"
+            className="rounded-sm bg-blue py-0.5 px-0.5 hover:scale-110 transition duration-500"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex rounded-sm items-center justify-center font-playfair px-10">
+            <div className="bg-deep-blue hover:text-yellow transition duration-500 w-full h-full flex rounded-sm items-center justify-center font-playfair py-3 px-10">
               <FaDownload className="mr-2" /> CV
             </div>
           </a>
         </motion.div>
         <motion.div
-          className="flex mt-5 gap-8 justify-center md:justify-start"
+          className="flex mt-5 justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
-          viewport={{ onece: true, amount: 0.5 }}
+          viewport={{ amount: 0.5 }}
           transition={{ delay: 0.4, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0 },
           }}
         >
           <SocialMediaIcons />

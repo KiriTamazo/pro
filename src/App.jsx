@@ -8,6 +8,7 @@ import Landing from "./apps/Landing/Landing";
 import MySkills from "./apps/Skill/MySkills";
 import Contact from "./apps/Contact/Contact";
 import Footer from "./apps/Footer/Footer";
+import Abilities from "./apps/Ability/Abilities";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState();
@@ -34,16 +35,12 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <div className="container md:h-full">
-        {/* {isAboveMediumScreen && (
-          <DotGroup
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-          />
-        )} */}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient width=" md:w-auto" />
       <MySkills />
+      <LineGradient />
+      <Abilities />
       <LineGradient />
       <Projects />
       <LineGradient />

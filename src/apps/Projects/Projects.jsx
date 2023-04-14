@@ -1,16 +1,62 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useLayoutEffect, useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
 import Project from "./Project";
 import LineGradient from "../../components/LineGradient";
 import { projects } from "../../data/data";
-
-const container = {
-  hidden: {},
-  visible: {},
-  transition: { staggerChildern: 0.2 },
+import ProjectList from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
+const item = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
 };
-
 const Projects = () => {
+  const containerRef = useRef(null);
+  const controls = useAnimation();
+
+  useLayoutEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          controls.start("visible");
+        } else {
+          controls.start("hidden");
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      observer.unobserve(containerRef.current);
+    };
+  }, [controls]);
+
+  const itemVariants = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      y: -50,
+    },
+  };
+
   return (
     <section id="projects" className="container h-auto py-24">
       {/* Headings */}
@@ -30,7 +76,7 @@ const Projects = () => {
             <span className="text-red">Pro</span>jects
           </p>
           <div className="flex justify-center mt-5">
-            <LineGradient width="w-1/3" />
+            <LineGradient width="w-[10rem]" />
           </div>
         </div>
         <p className="mt-10 mb-20">Some of my mini projects are here</p>
@@ -38,24 +84,28 @@ const Projects = () => {
       {/* Projects */}
       <div className="flex justify-center ">
         <motion.div
-          className="sm:grid sm:grid-cols-2 md:grid-cols-3 "
+          key="projects"
+          className="grid md:grid-cols-2 xl:grid-cols-3 gap-4"
+          ref={containerRef}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ onece: true, amount: 0.2 }}
-          transition={{ duration: 0.5 }}
-          variants={container}
+          animate={controls}
+          variants={{
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+            hidden: {
+              opacity: 0,
+            },
+          }}
         >
-          {/* Row 1 */}
-          <div className="bg-red p-10   max-h-[400px] md:max-h-fit text-2xl font-playfair font-semibold flex justify-center items-center text-center">
-            Beautiful User Interface
-          </div>
           {projects.map((project, i) => (
-            <Project key={i} project={project} />
+            <motion.div key={i} variants={itemVariants}>
+              <ProjectCard key={i} project={project} />
+            </motion.div>
           ))}
-
-          <div className="bg-blue p-10   max-h-[400px] md:max-h-fit text-2xl font-playfair font-semibold flex justify-center items-center text-center">
-            Smooth User Experience
-          </div>
         </motion.div>
       </div>
     </section>

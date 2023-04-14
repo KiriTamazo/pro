@@ -8,51 +8,63 @@ const MySkills = () => {
   return (
     <div className="container md:h-auto">
       <section id="skills" className="pt-10 pb-24">
-        <div className="md:flex-row flex flex-col items-center md:justify-between justify-center md:gap-16 mt-32">
+        <div className="md:flex-row flex flex-col items-center md:justify-between justify-center md:gap-16 mt-32 ">
           <motion.div
-            className="md:w-1/3"
+            className="md:w-1/3 flex-1"
             initial="hidden"
             whileInView="visible"
-            viewport={{ onece: true, amount: 0.5 }}
+            viewport={{ amount: 0.5 }}
             transition={{ duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <p className="font-playfair font-semibold text-4xl mb-5">
+            <p className="font-playfair  font-semibold text-4xl mb-5">
               My <span className="text-red">Skills</span>
             </p>
             <LineGradient width="w-[10rem]" />
-            <p className="mt-10 mb-7">
-              I want to be a Junior React Front-end Developer and seeking an
-              opportunity to extend my web developing and web designing skills &
-              knowledge, especially in the Front-End Field. I am passionate
-              about creating user-friendly and interactive web applications. I
-              have a good understanding of HTML, CSS, JavaScript, React and
-              Redux. I am also familiar with the other library such as Tailwind
-              Css, Bootstrap and MUI. I am confident that I can contribute to
-              the success of your organization.
+            <p className="mt-10 mb-7 ">
+              I am seeking an opportunity to extend my web development and
+              design skills and knowledge, particularly in the Front-End field,
+              with the goal of becoming a Junior React Front-End Developer. I am
+              passionate about creating user-friendly and interactive web
+              applications, and I have a strong understanding of HTML, CSS,
+              JavaScript, React, and Redux. Additionally, I am familiar with
+              other libraries such as Tailwind CSS, Bootstrap, and MUI. I am
+              confident that I can make a valuable contribution to the success
+              of your organization.
             </p>
           </motion.div>
-          <div className="mt-16 md:mt-0">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="mt-16 md:mt-0 pl-2"
+          >
             {isAboveMediumScreen ? (
-              <div className=" before:rounded-md relative z-0 ml-20 before:absolute before:-top-10 before:-left-20  before:w-full  before:h-full before:border-2 before-border-blue before:z-[-1] ">
+              <div className=" relative z-0 ">
                 <img
                   src="./image/profile.png"
                   alt="skills"
-                  className="z-10 bg-[#00b5ee] lg:max-w-[500px] sm:max-w-[450px] rounded-md"
+                  className="z-10 bg-blue xl:max-w-[500px] sm:max-w-[400px] md:max-w-[420px] rounded-md"
                 />
               </div>
             ) : (
               <img
-                src="./image/profile.png"
+                src="./image/main.png"
                 alt="profile"
-                className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] bg-gradient-rainblue rounded-t-[400px] "
+                className=" transition duration-500 z-10 w-full max-w-[400px] md:max-w-[450px]  rounded-t-[400px] "
               />
             )}
-          </div>
+          </motion.div>
         </div>
+
         {/* Skills */}
         <div
           className="grid grid-cols-1 md:grid-cols-2  md:justify-between mt-16 
@@ -63,7 +75,7 @@ const MySkills = () => {
             className=" mt-10"
             initial="hidden"
             whileInView="visible"
-            viewport={{ onece: true, amount: 0.5 }}
+            viewport={{ amount: 0.5 }}
             transition={{ duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, y: 50 },
@@ -77,19 +89,18 @@ const MySkills = () => {
                   NGS Dashboard
                 </p>
               </div>
-              <div className="w-full md:w-3/4 h-full bg-blue absolute right-0 top-0 z-[-1]">
+              <div className="rounded w-full md:w-3/4 h-full bg-blue absolute right-0 top-0 z-[-1]">
                 <img
-                  className="w-full h-full md:max-h-[160px] brightness-50"
+                  className="rounded w-full h-full md:max-h-[160px] brightness-50 object-cover"
                   src="./image/ngs-dashboard.png"
                   alt="ngs-dashboard"
                 />
               </div>
             </div>
             <p className="mt-5">
-              I have been involved in developing the dashboard for the NGS group
-              from the beginning. This includes creating the visualizations and
-              coding the dashboard. Additionally, I have provided feedback and
-              suggestions to the team to improve the dashboard.
+              I helped develop the NGS group's dashboard by creating
+              visualizations and coding. I also provided feedback and
+              suggestions to improve the dashboard.
             </p>
           </motion.div>
           {/* Innovative */}
@@ -97,55 +108,37 @@ const MySkills = () => {
             className=" mt-10"
             initial="hidden"
             whileInView="visible"
-            viewport={{ onece: true, amount: 0.5 }}
+            viewport={{ amount: 0.5 }}
             transition={{ delay: 0.2, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
             <div className="relative h-32">
               <div className="z-10 md:block flex flex-col justify-center items-center h-full cursor-pointer">
                 <p className="font-playfair font-semibold font-5xl">02</p>
                 <p className="font-playfair font-semibold font-3xl md:mt-3">
-                  Experiences
+                  Shwe Real Estate
                 </p>
               </div>
-              <div className="w-full md:w-3/4 h-full bg-red absolute right-0 top-0 z-[-1]"></div>
+              <div className=" rounded w-full md:w-3/4 h-full bg-red absolute right-0 top-0 z-[-1]">
+                <img
+                  src="./image/shwe-real-estate.png"
+                  className="brightness-50 rounded w-full h-full md:max-h-[160px] brightness object-cover"
+                  alt=""
+                />
+              </div>
             </div>
             <p className="mt-5">
-              Currently unavailable...
-              <br /> My search for opportunities to complete the experience is
-              ongoing.
+              I designed and implemented essential layout components, such as
+              the navbar, sidebar, header, breadcrumb, and footer, for both the
+              Shwe Real Estate website and dashboard. My contributions improved
+              the website's functionality and user experience through visually
+              appealing and user-friendly designs
             </p>
           </motion.div>
           {/* Imaginative */}
-          {/* <motion.div
-            className=" mt-10"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ onece: true, amount: 0.5 }}
-            transition={{ delay: 0.4, duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
-            <div className="relative h-32">
-              <div className="z-10 md:block flex flex-col justify-center items-center h-full cursor-pointer">
-                <p className="font-playfair font-semibold font-5xl">03</p>
-                <p className="font-playfair font-semibold font-3xl md:mt-3">
-                  Experiences
-                </p>
-              </div>
-              <div className="w-full md:w-3/4 h-full bg-yellow absolute right-0 top-0 z-[-1]"></div>
-            </div>
-            <p className="mt-5">
-              Currently unavailable...
-              <br /> My search for opportunities to complete the experience is
-              ongoing.
-            </p>
-          </motion.div> */}
         </div>
       </section>
     </div>
