@@ -50,6 +50,7 @@ export const projects = [
       "https://github.com/KiriTamazo/Mern-Ecommerce-Website",
     ],
     img: "./image/allure.png",
+    desc: " Mern Ecommerce website with Login,Register,Review the products and can Create and Delete Products",
   },
   {
     title: "Marketing",
@@ -58,6 +59,7 @@ export const projects = [
       "https://github.com/KiriTamazo/Marketing",
     ],
     img: "./image/marketing.png",
+    desc: "Static Website only using HTML,CSS , JavaScript and libraries",
   },
   {
     title: "MeteorV2",
@@ -66,6 +68,7 @@ export const projects = [
       "https://github.com/KiriTamazo/Meteor.github.io",
     ],
     img: "./image/meteor.png",
+    desc: "Static Website only using HTML,CSS , JavaScript and libraries",
   },
   {
     title: "Omnifood",
@@ -74,6 +77,7 @@ export const projects = [
       "https://github.com/KiriTamazo/OminiFood.github.io",
     ],
     img: "./image/ominifood.png",
+    desc: "Static Website only using HTML,CSS , JavaScript and libraries",
   },
   {
     title: "Nike Store Clone",
@@ -82,6 +86,7 @@ export const projects = [
       "https://github.com/KiriTamazo/nike-store",
     ],
     img: "./image/nike-clone.png",
+    desc: "React website using Tailwindcss for styling and Redux for state management",
   },
 ];
 

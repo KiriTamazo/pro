@@ -33,8 +33,6 @@ textarea {
   @apply border-0 outline-0;
 }
 .bg-glass {
-  background: rgb(91 91 128 / 55%);
+  @apply bg-indigo-900/50;
   box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
 }

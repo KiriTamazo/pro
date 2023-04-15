@@ -1,6 +1,6 @@
 import { FaCode, FaEye } from "react-icons/fa";
 const ProjectCard = ({ project }) => {
-  const { title, img, url, icons } = project;
+  const { title, img, url, desc } = project;
   return (
     <div className="relative group  transition duration-500 ease-in-out  rounded-lg overflow-hidden">
       <img className="w-96 h-80 object-cover" src={img} alt={title} />
@@ -13,8 +13,8 @@ const ProjectCard = ({ project }) => {
         </p>
         <div className="bg-slate-900/90 group-hover:min-h-[300px] text-white pt-4 pb-8 px-4">
           <p>
-            Mern Ecommerce website with Login,Register,Review the products and
-            can Create and Delete Products
+            {desc}
+           
           </p>
 
           <div className="w-[100%] h-[100%] flex mt-8 justify-between gap-5 items-center">
