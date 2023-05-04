@@ -50,7 +50,7 @@ export const projects = [
       "https://github.com/KiriTamazo/Mern-Ecommerce-Website",
     ],
     img: "./image/allure.png",
-    desc: " Mern Ecommerce website with Login,Register,Review the products and can Create and Delete Products",
+    desc: " Mern Ecommerce website with Authentication,Review the products and can Create and Delete Products",
   },
   {
     title: "Marketing",

@@ -91,7 +91,7 @@ const MySkills = () => {
               </div>
               <div className="rounded w-full md:w-3/4 h-full bg-blue absolute right-0 top-0 z-[-1]">
                 <img
-                  className="rounded w-full h-full md:max-h-[160px] brightness-50 object-cover"
+                  className="rounded w-full h-full max-h-full md:max-h-max brightness-50 object-cover"
                   src="./image/ngs-dashboard.png"
                   alt="ngs-dashboard"
                 />
@@ -125,7 +125,7 @@ const MySkills = () => {
               <div className=" rounded w-full md:w-3/4 h-full bg-red absolute right-0 top-0 z-[-1]">
                 <img
                   src="./image/shwe-real-estate.png"
-                  className="brightness-50 rounded w-full h-full md:max-h-[160px] brightness object-cover"
+                  className="brightness-50 rounded w-full h-full md:max-h-max max-h-full brightness object-cover"
                   alt=""
                 />
               </div>
