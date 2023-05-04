@@ -26,7 +26,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <img
             src="image/profile-vector.png"
-            className="max-w-[320px] md:max-w-[400px]  xl:max-w-[500px] max-h-[500px]"
+            className="max-w-[250px] md:max-w-[400px]  xl:max-w-[500px] max-h-[500px]"
             alt="profile"
           />
         </motion.div>
