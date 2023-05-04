@@ -1,5 +1,4 @@
 import React from "react";
-import useMediaQuery from "../../hooks/useMediaQuery";
 import Typist from "react-text-typist";
 import { motion } from "framer-motion";
 import SocialMediaIcons from "../../components/SocialMediaIcons";
@@ -84,7 +83,7 @@ const Landing = ({ setSelectedPage }) => {
             <Link
               smooth={true}
               duration={500}
-              className="bg-blue md:text-start text-center text-deep-blue rounded-sm py-3   px-7  font-semibold hover:scale-110 hover:text-white transition duration-500 cursor-pointer"
+              className="bg-blue md:text-start text-center text-deep-blue rounded-sm py-3   px-7  font-semibold hover:scale-90 hover:text-white transition duration-500 cursor-pointer"
               to="contact"
             >
               Contact Me
@@ -93,7 +92,7 @@ const Landing = ({ setSelectedPage }) => {
               href="LWHA_Resume.pdf"
               target="_blank"
               download
-              className="rounded-sm bg-blue py-0.5 px-0.5 hover:scale-110 transition duration-500"
+              className="rounded-sm bg-blue py-0.5 px-0.5 hover:scale-90 transition duration-500"
             >
               <div className="bg-deep-blue hover:text-yellow transition duration-500 w-full h-full flex rounded-sm items-center justify-center font-playfair py-3 px-10">
                 <FaDownload className="mr-2" /> CV
