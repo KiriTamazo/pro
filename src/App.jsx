@@ -34,9 +34,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="container md:h-full">
-        <Landing setSelectedPage={setSelectedPage} />
-      </div>
+      <Landing setSelectedPage={setSelectedPage} />
       <LineGradient width=" md:w-auto" />
       <MySkills />
       <LineGradient />

@@ -6,7 +6,7 @@ import LineGradient from "../../components/LineGradient";
 const MySkills = () => {
   const isAboveMediumScreen = useMediaQuery("(min-width:1060px)");
   return (
-    <div className="container md:h-auto">
+    <div className="container md:h-auto overflow-hidden">
       <section id="skills" className="pt-10 pb-24">
         <div className="md:flex-row flex flex-col items-center md:justify-between justify-center md:gap-16 mt-32 ">
           <motion.div
