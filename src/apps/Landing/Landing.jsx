@@ -58,8 +58,8 @@ const Landing = ({ setSelectedPage }) => {
               I Am{" "}
               <Typist
                 className="text-blue"
-                typingSpeed="100"
-                deletingSpeed="150"
+                typingSpeed="200"
+                deletingSpeed="100"
                 cursorSmooth
                 sentences={[
                   "Junior React Developer",
