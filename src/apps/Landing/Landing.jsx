@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import SocialMediaIcons from "../../components/SocialMediaIcons";
 import { Link } from "react-scroll";
 import { FaDownload } from "react-icons/fa";
+import { TypeAnimation } from 'react-type-animation';
+
 const Landing = ({ setSelectedPage }) => {
   return (
     <div className="container md:h-full overflow-hidden">
@@ -15,7 +17,7 @@ const Landing = ({ setSelectedPage }) => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.5 }}
+          viewport={{once:true, amount: 0.5 }}
           transition={{ delay: 0.2, duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: 50 },
@@ -56,16 +58,18 @@ const Landing = ({ setSelectedPage }) => {
 
             <p className="font-semibold font-opensans text-xl mt-5 mb-7  text-center md:text-start">
               I Am{" "}
-              <Typist
-                className="text-blue"
-                typingSpeed="200"
-                deletingSpeed="100"
-                cursorSmooth
-                sentences={[
-                  "Junior React Developer",
-                  " Into Front-End Development",
-                ]}
-              />
+              <TypeAnimation
+      sequence={[
+        'Junior React Developer',
+        1000,
+        'Into Front-End Development',
+        1000,
+      ]}
+      wrapper="span"
+      speed={50}
+      className="text-blue"
+      repeat={Infinity}
+    />
             </p>
           </motion.div>
 

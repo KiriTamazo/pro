@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Project from "./Project";
 import LineGradient from "../../components/LineGradient";
@@ -22,7 +22,7 @@ const Projects = () => {
   const containerRef = useRef(null);
   const controls = useAnimation();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -64,7 +64,7 @@ const Projects = () => {
         className="md:w-2/4 mx-auto text-center"
         initial="hidden"
         whileInView="visible"
-        viewport={{ onece: true, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.5 }}
         variants={{
           hidden: { opacity: 0, y: -50 },

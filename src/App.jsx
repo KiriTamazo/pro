@@ -35,13 +35,13 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <Landing setSelectedPage={setSelectedPage} />
-      <LineGradient width=" md:w-auto" />
+      {/* <LineGradient width=" md:w-auto" /> */}
       <MySkills />
-      <LineGradient />
+      {/* <LineGradient /> */}
       <Abilities />
-      <LineGradient />
+      {/* <LineGradient /> */}
       <Projects />
-      <LineGradient />
+      {/* <LineGradient /> */}
       <Contact />
 
       <Footer />

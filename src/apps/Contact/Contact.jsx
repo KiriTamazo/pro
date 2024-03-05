@@ -25,7 +25,7 @@ const Contact = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ onece: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
@@ -47,7 +47,7 @@ const Contact = () => {
             className="basis-1/2 flex justify-center"
             initial="hidden"
             whileInView="visible"
-            viewport={{ onece: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, y: 50 },
@@ -65,7 +65,7 @@ const Contact = () => {
             className="basis-1/2 mt-10 md:mt-0"
             initial="hidden"
             whileInView="visible"
-            viewport={{ onece: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ dalay: 0.2, duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, y: 50 },

@@ -14,11 +14,11 @@ import {
   SiHtml5,
   SiJavascript,
   SiJquery,
-  SiMaterialui,
   SiMongodb,
   SiRedux,
   SiSass,
   SiTailwindcss,
+  SiMui
 } from "react-icons/si";
 export const links = ["Home", "Skills", "Abilities", "Projects", "Contact"];
 export const socialLinks = [
@@ -112,7 +112,7 @@ export const ablilities = [
     title: "Firebase",
   },
   {
-    icon: <SiMaterialui color="#007fff" className="w-8 h-8" />,
+    icon: <SiMui  color="#007fff" className="w-8 h-8" />,
     title: "Mui",
   },
 
