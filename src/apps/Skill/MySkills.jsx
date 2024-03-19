@@ -13,11 +13,11 @@ const MySkills = () => {
             className="md:w-1/3 flex-1"
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.5 }}
+            viewport={{ amount: 0.5, once: true }}
             transition={{ duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
             <p className="font-playfair  font-semibold text-4xl mb-5">
@@ -39,11 +39,11 @@ const MySkills = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.5 }}
-            transition={{ duration: 0.5 }}
+            viewport={{ amount: 0.5, once: true }}
+            transition={{ duration: 0.75 }}
             variants={{
-              hidden: { opacity: 0, x: 50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
             }}
             className="mt-16 md:mt-0 pl-2"
           >
@@ -75,10 +75,10 @@ const MySkills = () => {
             className=" mt-10"
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.5 }}
+            viewport={{ amount: 0.5, once: true }}
             transition={{ duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, y: 50 },
+              hidden: { opacity: 0, y: -50 },
               visible: { opacity: 1, y: 0 },
             }}
           >
@@ -108,10 +108,10 @@ const MySkills = () => {
             className=" mt-10"
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.5 }}
+            viewport={{ amount: 0.5, once: true }}
             transition={{ delay: 0.2, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, y: 50 },
+              hidden: { opacity: 0, y: -50 },
               visible: { opacity: 1, y: 0 },
             }}
           >

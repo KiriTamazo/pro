@@ -1,14 +1,12 @@
-import React from "react";
-import Typist from "react-text-typist";
 import { motion } from "framer-motion";
 import SocialMediaIcons from "../../components/SocialMediaIcons";
 import { Link } from "react-scroll";
 import { FaDownload } from "react-icons/fa";
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 
-const Landing = ({ setSelectedPage }) => {
+const Landing = () => {
   return (
-    <div className="container md:h-full overflow-hidden">
+    <div className="container md:h-full">
       <section
         id="home"
         className="md:flex md:justify-between md:items-center  md:h-full gap-16 py-10 "
@@ -17,11 +15,11 @@ const Landing = ({ setSelectedPage }) => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{once:true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.2, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0 },
           }}
           className="md:order-2 flex justify-center basis-3/5 z-10 mt-16  md:mt-8"
         >
@@ -40,8 +38,8 @@ const Landing = ({ setSelectedPage }) => {
             viewport={{ amount: 0.5 }}
             transition={{ duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
             <p className="text-center md:text-start"> Hello There! </p>
@@ -59,17 +57,17 @@ const Landing = ({ setSelectedPage }) => {
             <p className="font-semibold font-opensans text-xl mt-5 mb-7  text-center md:text-start">
               I Am{" "}
               <TypeAnimation
-      sequence={[
-        'Junior React Developer',
-        1000,
-        'Into Front-End Development',
-        1000,
-      ]}
-      wrapper="span"
-      speed={50}
-      className="text-blue"
-      repeat={Infinity}
-    />
+                sequence={[
+                  "Junior React Developer",
+                  1000,
+                  "Into Front-End Development",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={80}
+                className="text-blue"
+                repeat={Infinity}
+              />
             </p>
           </motion.div>
 
@@ -80,8 +78,8 @@ const Landing = ({ setSelectedPage }) => {
             viewport={{ onece: true, amount: 0.5 }}
             transition={{ delay: 0.2, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
             <Link

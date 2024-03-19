@@ -1,4 +1,5 @@
-module.exports = {
+export default {
+
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   mode: "jit",
   theme: {
@@ -12,7 +13,7 @@ module.exports = {
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.3)",
       },
-      backgroundImage: (theme) => ({
+      backgroundImage: () => ({
         "gradient-rainbow":
           "linear-gradient(81.66deg, #00b5ee 7.21%, #ff45a4 45.05%, #ffba00 78.07%)",
         "gradient-rainblue":

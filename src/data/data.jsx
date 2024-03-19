@@ -6,6 +6,8 @@ import {
   FaReact,
   FaNodeJs,
   FaNode,
+  FaPhp,
+  FaLaravel,
 } from "react-icons/fa";
 import {
   SiBootstrap,
@@ -18,7 +20,8 @@ import {
   SiRedux,
   SiSass,
   SiTailwindcss,
-  SiMui
+  SiMui,
+  SiMysql,
 } from "react-icons/si";
 export const links = ["Home", "Skills", "Abilities", "Projects", "Contact"];
 export const socialLinks = [
@@ -35,12 +38,12 @@ export const socialLinks = [
     icon: <FaFacebookSquare />,
     to: "https://www.facebook.com",
   },
-  {
-    id: 4,
-    color: "#f09433",
-    icon: <FaInstagram />,
-    to: "https://www.instagram.com",
-  },
+  // {
+  //   id: 4,
+  //   color: "#f09433",
+  //   icon: <FaInstagram />,
+  //   to: "https://www.instagram.com",
+  // },
 ];
 export const projects = [
   {
@@ -92,39 +95,6 @@ export const projects = [
 
 export const ablilities = [
   {
-    icon: <FaReact color="#61DBFB" className="w-8 h-8" />,
-    title: "ReactJS",
-  },
-  {
-    icon: <FaNodeJs color="#68A063" className="w-8 h-8" />,
-    title: "ExpressJS",
-  },
-  {
-    icon: <FaNode color="#3C873A" className="w-8 h-8" />,
-    title: "NodeJS",
-  },
-  {
-    icon: <SiRedux color="#764abc " className="w-8 h-8" />,
-    title: "Redux",
-  },
-  {
-    icon: <SiFirebase color="#FFCB2B" className="w-8 h-8" />,
-    title: "Firebase",
-  },
-  {
-    icon: <SiMui  color="#007fff" className="w-8 h-8" />,
-    title: "Mui",
-  },
-
-  {
-    icon: <SiBootstrap color="#4606F2" className="w-8 h-8" />,
-    title: "Bootstrap",
-  },
-  {
-    icon: <SiSass color="#cc6699 " className="w-8 h-8" />,
-    title: "Sass",
-  },
-  {
     icon: <SiHtml5 color="#F06529" className="w-8 h-8" />,
     title: "HTML5",
   },
@@ -137,15 +107,60 @@ export const ablilities = [
     title: "Javascript",
   },
   {
-    icon: <SiMongodb color="#589636" className="w-8 h-8" />,
-    title: "MongoDB",
+    icon: <SiSass color="#cc6699 " className="w-8 h-8" />,
+    title: "Sass",
+  },
+  {
+    icon: <SiBootstrap color="#4606F2" className="w-8 h-8" />,
+    title: "Bootstrap",
   },
   {
     icon: <SiJquery color="#0769AD " className="w-8 h-8" />,
     title: "Jquery",
   },
   {
+    icon: <FaReact color="#61DBFB" className="w-8 h-8" />,
+    title: "ReactJS",
+  },
+  {
     icon: <SiTailwindcss color="#007fff" className="w-8 h-8" />,
     title: "Tailwindcss",
+  },
+  {
+    icon: <SiMui color="#007fff" className="w-8 h-8" />,
+    title: "Mui",
+  },
+  {
+    icon: <SiRedux color="#764abc " className="w-8 h-8" />,
+    title: "Redux",
+  },
+
+  {
+    icon: <SiFirebase color="#FFCB2B" className="w-8 h-8" />,
+    title: "Firebase",
+  },
+  {
+    icon: <FaNode color="#3C873A" className="w-8 h-8" />,
+    title: "NodeJS",
+  },
+  {
+    icon: <FaNodeJs color="#68A063" className="w-8 h-8" />,
+    title: "ExpressJS",
+  },
+  {
+    icon: <SiMongodb color="#589636" className="w-8 h-8" />,
+    title: "MongoDB",
+  },
+  {
+    icon: <FaPhp color="#787CB5" className="w-8 h-8" />,
+    title: "Php",
+  },
+  {
+    icon: <FaLaravel color="#F05340" className="w-8 h-8" />,
+    title: "Laravel",
+  },
+  {
+    icon: <SiMysql color="#00758F" className="w-8 h-8" />,
+    title: "MySql",
   },
 ];
