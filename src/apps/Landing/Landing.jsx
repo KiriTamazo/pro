@@ -35,7 +35,7 @@ const Landing = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.5 }}
+            viewport={{ amount: 0.5, once: true }}
             transition={{ duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, y: -50 },
@@ -75,8 +75,8 @@ const Landing = () => {
             className="flex flex-col md:flex-row mt-5 gap-8 justify-center md:justify-start"
             initial="hidden"
             whileInView="visible"
-            viewport={{ onece: true, amount: 0.5 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, y: -50 },
               visible: { opacity: 1, y: 0 },
@@ -109,7 +109,10 @@ const Landing = () => {
             transition={{ delay: 0.4, duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, y: -50 },
-              visible: { opacity: 1, y: 0 },
+              visible: {
+                opacity: 1,
+                y: 0,
+              },
             }}
           >
             <SocialMediaIcons />

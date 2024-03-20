@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect, useRef } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 import Project from "./Project";
 import LineGradient from "../../components/LineGradient";
 import { projects } from "../../data/data";
@@ -19,29 +19,11 @@ const item = {
   },
 };
 const Projects = () => {
-  const containerRef = useRef(null);
-  const controls = useAnimation();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          controls.start("visible");
-        } else {
-          controls.start("hidden");
-        }
-      },
-      { threshold: 0.2 }
-    );
-
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-
-    return () => {
-      observer.unobserve(containerRef.current);
-    };
-  }, [controls]);
+  const ref = useRef(null);
+  const inView = useInView(ref, {
+    once: true,
+    margin: "0px 100px -50px 0px",
+  });
 
   const itemVariants = {
     visible: {
@@ -56,7 +38,6 @@ const Projects = () => {
       y: -50,
     },
   };
-
   return (
     <section id="projects" className="container h-auto py-24">
       {/* Headings */}
@@ -86,9 +67,9 @@ const Projects = () => {
         <motion.div
           key="projects"
           className="grid md:grid-cols-2 xl:grid-cols-3 gap-4"
-          ref={containerRef}
+          ref={ref}
           initial="hidden"
-          animate={controls}
+          animate={inView ? "visible" : "hidden"}
           variants={{
             visible: {
               opacity: 1,

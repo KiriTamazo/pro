@@ -1,23 +1,32 @@
-import React, { useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import LineGradient from "../../components/LineGradient";
+import emailjs from "emailjs-com";
+import { useState } from "react";
 
 const Contact = () => {
   const {
     register,
     trigger,
-
-    formState: { errors },
+    handleSubmit,
+    formState: { errors, isSubmitSuccessful },
   } = useForm();
+  const [loading, setLoading] = useState(false);
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (data) => {
+    setLoading(true);
     const isValid = await trigger();
-    if (!isValid) {
-      e.preventDefault();
+    if (isValid) {
+      emailjs
+        .send("service_o4lq5yw", "template_fouztqj", data, "OkdwlobVAHffe1xmz")
+        .then((response) => {
+          setLoading(false);
+        })
+        .catch((error) => {
+          setLoading(false);
+        });
     }
   };
-
   return (
     <div className="container md:h-auto grid items-center mb-4">
       <section id="contact" className="pt-24 pb-16">
@@ -34,15 +43,15 @@ const Contact = () => {
         >
           <div className="mb-20">
             <p className="text-4xl font-playfair font-semibold text-center">
-              <span className="text-yellow">Contact Me</span> To Get Started
+              <span className="text-yellow">Contact Me</span>
             </p>
             <div className="flex md:justify-end my-5">
-              <LineGradient width="mx-auto w-2/4 max-w-[580px] md:max-w-[400px]" />
+              <LineGradient width="mx-auto w-2/4 max-w-[180px] md:max-w-[200px]" />
             </div>
           </div>
         </motion.div>
         {/* Form & Img */}
-        <div className="md:flex md:justify-between gap-16 mt-5">
+        <div className="md:flex md:items-center md:justify-between gap-16 mt-5">
           <motion.div
             className="basis-1/2 flex justify-center"
             initial="hidden"
@@ -55,7 +64,7 @@ const Contact = () => {
             }}
           >
             <img
-              src="./image/contact-image.jpeg"
+              src="./image/contact.jpg"
               alt="contact"
               className="rounded-md"
             />
@@ -73,66 +82,102 @@ const Contact = () => {
             }}
           >
             <form
-              className="max-w-[700px] mx-auto"
-              target="_blank"
-              onSubmit={onSubmit}
-              action="https://formsubmit.co/301aff0f55a7ea728c005f03c435694d"
-              method="POST"
+              className="max-w-[700px] mx-auto space-y-4"
+              onSubmit={handleSubmit(onSubmit)}
             >
-              <input
-                type="text"
-                className="rounded-md w-full bg-white font-semibold placeholder-opaque-black p-3"
-                placeholder="Name"
-                {...register("name", { required: true, maxLength: 100 })}
-              />
-              {errors.name && (
-                <p className="text-red mt-1">
-                  {errors.name.type === "required" && "This field is required"}
-                  {errors.name.type === "maxLength" &&
-                    "Max length is 100 characters"}
-                </p>
-              )}
-              <input
-                type="text"
-                className="rounded-md w-full bg-white font-semibold placeholder-opaque-black p-3 mt-5"
-                placeholder="Email"
-                {...register("email", {
-                  required: true,
-                  pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                })}
-              />
-              {errors.email && (
-                <p className="text-red mt-1">
-                  {errors.email.type === "required" &&
-                    "This field is required."}
-                  {errors.email.type === "pattern" && "Invalid email address."}
-                </p>
-              )}
-              <textarea
-                className="rounded-md w-full bg-white font-semibold placeholder-opaque-black p-3 mt-5"
-                name="message"
-                placeholder="MESSAGE"
-                rows="4"
-                cols="50"
-                {...register("message", {
-                  required: true,
-                  maxLength: 2000,
-                })}
-              />
-              {errors.message && (
-                <p className="text-red mt-1">
-                  {errors.message.type === "required" &&
-                    "This field is required."}
-                  {errors.message.type === "maxLength" &&
-                    "Max length is 2000 char."}
-                </p>
-              )}
-
+              <div className="space-y-1">
+                <label>Name</label>
+                <input
+                  type="text"
+                  className="rounded-md w-full text-slate-800 bg-white font-semibold placeholder-opaque-black p-3"
+                  placeholder="Name"
+                  {...register("name", { required: true, maxLength: 100 })}
+                />
+                {errors.name && (
+                  <p className="text-red mt-1">
+                    {errors.name.type === "required" &&
+                      "This field is required"}
+                    {errors.name.type === "maxLength" &&
+                      "Max length is 100 characters"}
+                  </p>
+                )}
+              </div>
+              <div className="space-y-1">
+                <label>Email</label>
+                <input
+                  type="text"
+                  className="rounded-md w-full text-slate-800 bg-white font-semibold placeholder-opaque-black p-3"
+                  placeholder="Email"
+                  {...register("email", {
+                    required: true,
+                    pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  })}
+                />
+                {errors.email && (
+                  <p className="text-red mt-1">
+                    {errors.email.type === "required" &&
+                      "This field is required."}
+                    {errors.email.type === "pattern" &&
+                      "Invalid email address."}
+                  </p>
+                )}
+              </div>
+              <div className="space-y-1">
+                <label>Message</label>
+                <textarea
+                  className="rounded-md w-full text-slate-800 bg-white font-semibold placeholder-opaque-black p-3"
+                  name="message"
+                  placeholder="MESSAGE"
+                  rows="4"
+                  cols="50"
+                  {...register("message", {
+                    required: true,
+                    maxLength: 2000,
+                  })}
+                />
+                {errors.message && (
+                  <p className="text-red mt-1">
+                    {errors.message.type === "required" &&
+                      "This field is required."}
+                    {errors.message.type === "maxLength" &&
+                      "Max length is 2000 char."}
+                  </p>
+                )}
+              </div>
               <button
-                className="w-full md:w-auto p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded-md"
+                disabled={loading || isSubmitSuccessful}
+                className={`w-full  p-5 ${
+                  !loading && isSubmitSuccessful
+                    ? "bg-green-500 text-white hover:bg-green-500/80"
+                    : "bg-yellow  text-deep-blue hover:bg-red hover:text-white"
+                } disabled:cursor-not-allowed mt-5 font-semibold  transition duration-500 rounded-md`}
                 type="submit"
               >
-                SEND ME A MESSAGE
+                {loading ? (
+                  <svg
+                    className="animate-spin inline-block h-5 w-5 mr-3 fill-yellow"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>
+                ) : (
+                  ""
+                )}
+                {!loading && isSubmitSuccessful
+                  ? "Message Successfully Sent"
+                  : "Send me a message"}
               </button>
             </form>
           </motion.div>

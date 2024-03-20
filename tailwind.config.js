@@ -24,6 +24,9 @@ export default {
         opensans: ["Open Sans", "sans-serif"],
       },
     },
+    animation: {
+      'spin': 'spin 1s linear infinite',
+    },
     screens: {
       xs: "480px",
       sm: "768px",

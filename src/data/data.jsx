@@ -29,14 +29,19 @@ export const socialLinks = [
     id: 1,
     color: "#0072b1",
     icon: <FaLinkedinIn />,
-    to: "https://www.linkedin.com",
+    to: "https://www.linkedin.com/in/la-woon-htet-aung-9a8a46214/",
   },
-  { id: 2, color: "#171515", icon: <FaGithub />, to: "https://www.github.com" },
+  {
+    id: 2,
+    color: "#171515",
+    icon: <FaGithub />,
+    to: "https://github.com/KiriTamazo",
+  },
   {
     id: 3,
     color: "#3b5998",
     icon: <FaFacebookSquare />,
-    to: "https://www.facebook.com",
+    to: "https://www.facebook.com/tama.kazo.94",
   },
   // {
   //   id: 4,
