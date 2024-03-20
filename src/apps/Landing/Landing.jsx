@@ -105,7 +105,7 @@ const Landing = () => {
             className="flex mt-5 justify-center md:justify-start"
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.5 }}
+            viewport={{ amount: 0.5, once: true }}
             transition={{ delay: 0.4, duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, y: -50 },

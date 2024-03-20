@@ -36,7 +36,7 @@ const Abilities = () => {
             visible: {
               opacity: 1,
               y: 0,
-              transition: { staggerChildren: 0.2 },
+              transition: { staggerChildren: 0.15 },
             },
           }}
           className="grid grid-cols-2  sm:grid-cols-3 justify-center md:grid-cols-5 xl:grid:cols-9 gap-4 mt-16 bg-indigo-500/20 rounded w-full h-full px-6  py-6 max-w-[1200px] mx-auto"
