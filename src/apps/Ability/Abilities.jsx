@@ -2,7 +2,6 @@ import { useRef } from "react";
 import LineGradient from "../../components/LineGradient";
 import { ablilities } from "../../data/data";
 import { motion, useInView } from "framer-motion";
-
 const Abilities = () => {
   const ref = useRef(null);
   const inView = useInView(ref, {
@@ -36,7 +35,7 @@ const Abilities = () => {
             visible: {
               opacity: 1,
               y: 0,
-              transition: { staggerChildren: 0.15 },
+              transition: { staggerChildren: 0.2 },
             },
           }}
           className="grid grid-cols-2  sm:grid-cols-3 justify-center md:grid-cols-5 xl:grid:cols-9 gap-4 mt-16 bg-indigo-500/20 rounded w-full h-full px-6  py-6 max-w-[1200px] mx-auto"
@@ -44,6 +43,7 @@ const Abilities = () => {
           {ablilities.map((item, i) => (
             <motion.div
               key={i}
+              transition={{ duration: 0.2 }}
               variants={{
                 hidden: { opacity: 0, y: -20 },
                 visible: {

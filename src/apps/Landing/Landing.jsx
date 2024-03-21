@@ -64,7 +64,7 @@ const Landing = () => {
                   1000,
                 ]}
                 wrapper="span"
-                speed={80}
+                speed={150}
                 className="text-blue"
                 repeat={Infinity}
               />
@@ -91,7 +91,7 @@ const Landing = () => {
               Contact Me
             </Link>
             <a
-              href="LWHA_Resume.pdf"
+              href="LWHA-Resume.pdf"
               target="_blank"
               download
               className="rounded-sm bg-blue py-0.5 px-0.5 hover:scale-90 transition duration-500"

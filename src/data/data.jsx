@@ -23,7 +23,7 @@ import {
   SiMui,
   SiMysql,
 } from "react-icons/si";
-export const links = ["Home", "Skills", "Abilities", "Projects", "Contact"];
+export const links = ["Home", "About Me", "Abilities", "Projects", "Contact"];
 export const socialLinks = [
   {
     id: 1,
@@ -167,5 +167,19 @@ export const ablilities = [
   {
     icon: <SiMysql color="#00758F" className="w-8 h-8" />,
     title: "MySql",
+  },
+];
+export const experiences = [
+  {
+    companyName: "Creative Coder",
+    period: "July 2023 - Present",
+    experience:
+      "Enhancing the user experience and functionality of our e-commerce application was one of my main contributions to TechMarket's growth inside the Creative Coder network. I worked directly with the team, utilizing technologies like Laravel, Inertia.js, and React, to provide reliable solutions. A dependable and manageable codebase was secured by my concentration on backend development.  In order to preserve the stability and dependability of an application, I also use Cypress to create test cases.",
+  },
+  {
+    companyName: "Ngs Developer Group",
+    period: "July 2022 - Feb 2023",
+    experience:
+      "I contributed to the development of the NGS Dashboard initially and later transitioned to another NGS project, the Shwe RealEstate Project. In the Real Estate Project, my responsibilities included coding the visually appealing main website and enhancing the dashboard functionality using technologies such as React, MUI, and Sass.",
   },
 ];

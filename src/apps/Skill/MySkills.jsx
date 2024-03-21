@@ -2,12 +2,13 @@ import React from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import LineGradient from "../../components/LineGradient";
+import Timeline from "./Timeline";
 
 const MySkills = () => {
   const isAboveMediumScreen = useMediaQuery("(min-width:1060px)");
   return (
     <div className="container md:h-auto overflow-hidden">
-      <section id="skills" className="pt-10 pb-24">
+      <section id="about me" className="pt-10 pb-24">
         <div className="md:flex-row flex flex-col items-center md:justify-between justify-center md:gap-16 mt-32 ">
           <motion.div
             className="md:w-1/3 flex-1"
@@ -21,7 +22,7 @@ const MySkills = () => {
             }}
           >
             <p className="font-playfair  font-semibold text-4xl mb-5">
-              My <span className="text-red">Skills</span>
+              About <span className="text-red">Me</span>
             </p>
             <LineGradient width="w-[10rem]" />
             <p className="mt-10 mb-7 ">
@@ -66,12 +67,31 @@ const MySkills = () => {
         </div>
 
         {/* Skills */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-2  md:justify-between mt-16 
-        gap-16 md:gap-32"
-        >
-          {/* Experiences */}
+        <div className="mt-16 gap-16 md:gap-32">
           <motion.div
+            className="md:w-2/4 mb-16 mx-auto text-center"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
+            <div>
+              <p className="font-playfair font-semibold text-4xl ">
+                My <span className="text-red">Experiences</span>
+              </p>
+              <div className="flex justify-center mt-5">
+                <LineGradient width="w-[14rem]" />
+              </div>
+            </div>
+          </motion.div>
+
+          <Timeline />
+          {/* Experiences */}
+          {/* <motion.div
             className=" mt-10"
             initial="hidden"
             whileInView="visible"
@@ -102,9 +122,9 @@ const MySkills = () => {
               visualizations and coding. I also provided feedback and
               suggestions to improve the dashboard.
             </p>
-          </motion.div>
+          </motion.div> */}
           {/* Innovative */}
-          <motion.div
+          {/* <motion.div
             className=" mt-10"
             initial="hidden"
             whileInView="visible"
@@ -137,7 +157,7 @@ const MySkills = () => {
               the website's functionality and user experience through visually
               appealing and user-friendly designs
             </p>
-          </motion.div>
+          </motion.div> */}
           {/* Imaginative */}
         </div>
       </section>
