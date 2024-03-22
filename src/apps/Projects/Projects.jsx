@@ -24,7 +24,6 @@ const Projects = () => {
     once: true,
     margin: "0px 100px -50px 0px",
   });
-
   const itemVariants = {
     visible: {
       opacity: 1,
@@ -39,7 +38,7 @@ const Projects = () => {
     },
   };
   return (
-    <section id="projects" className="container h-auto py-24">
+    <section id="projects" className="container h-auto py-10">
       {/* Headings */}
       <motion.div
         className="md:w-2/4 mx-auto text-center"
@@ -92,5 +91,4 @@ const Projects = () => {
     </section>
   );
 };
-
 export default Projects;

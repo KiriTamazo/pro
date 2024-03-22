@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { experiences } from "../../data/data";
 import TimelineCard from "./TimelineCard";
 import { motion, useInView } from "framer-motion";
-
 const Timeline = () => {
   const ref = useRef();
   const inView = useInView(ref, {
@@ -25,7 +24,7 @@ const Timeline = () => {
           },
         },
       }}
-      className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent"
+      className="space-y-8 relative before:absolute before:inset-0 before:ml-5 md:before:ml-auto xs:before:-translate-x-px xs:before:mr-auto md:before:translate-x-0 before:h-full xs:before:w-0.5 xs:before:bg-gradient-to-b xs:before:from-transparent xs:before:via-slate-300 before:to-transparent"
     >
       {experiences?.map((experience, i) => (
         <TimelineCard key={i} timeline={experience} />

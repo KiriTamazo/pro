@@ -3,7 +3,6 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import LineGradient from "../../components/LineGradient";
 import Timeline from "./Timeline";
-
 const MySkills = () => {
   const isAboveMediumScreen = useMediaQuery("(min-width:1060px)");
   return (
@@ -65,9 +64,8 @@ const MySkills = () => {
             )}
           </motion.div>
         </div>
-
-        {/* Skills */}
-        <div className="mt-16 gap-16 md:gap-32">
+        {/* Experience */}
+        <div className="mt-32 gap-16 md:gap-32">
           <motion.div
             className="md:w-2/4 mb-16 mx-auto text-center"
             initial="hidden"
@@ -88,7 +86,6 @@ const MySkills = () => {
               </div>
             </div>
           </motion.div>
-
           <Timeline />
           {/* Experiences */}
           {/* <motion.div
@@ -164,5 +161,4 @@ const MySkills = () => {
     </div>
   );
 };
-
 export default MySkills;

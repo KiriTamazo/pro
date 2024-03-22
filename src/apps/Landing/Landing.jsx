@@ -3,13 +3,12 @@ import SocialMediaIcons from "../../components/SocialMediaIcons";
 import { Link } from "react-scroll";
 import { FaDownload } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-
 const Landing = () => {
   return (
-    <div className="container md:h-full">
+    <div className="container md:h-auto">
       <section
         id="home"
-        className="md:flex md:justify-between md:items-center  md:h-full gap-16 py-10 "
+        className="md:flex md:justify-between md:items-center  md:h-fit gap-16 mt-20 py-10 "
       >
         {/* Image Section */}
         <motion.div
@@ -43,7 +42,6 @@ const Landing = () => {
             }}
           >
             <p className="text-center md:text-start"> Hello There! </p>
-
             <p className="xl:text-6xl text-4xl font-playfair z-10 text-center md:text-start leading-[3rem]">
               I'm La Woon <br />
               <span
@@ -53,7 +51,6 @@ const Landing = () => {
                 Htet Aung
               </span>
             </p>
-
             <p className="font-semibold font-opensans text-xl mt-5 mb-7  text-center md:text-start">
               I Am{" "}
               <TypeAnimation
@@ -70,7 +67,6 @@ const Landing = () => {
               />
             </p>
           </motion.div>
-
           <motion.div
             className="flex flex-col md:flex-row mt-5 gap-8 justify-center md:justify-start"
             initial="hidden"
@@ -122,5 +118,4 @@ const Landing = () => {
     </div>
   );
 };
-
 export default Landing;

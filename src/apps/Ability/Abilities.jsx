@@ -8,8 +8,8 @@ const Abilities = () => {
     once: true,
   });
   return (
-    <div className="container h-auto pt-24">
-      <section id="abilities" className="pt-10 pb-24">
+    <div className="container h-auto py-10">
+      <section id="abilities">
         <motion.div
           initial="hidden"
           whileInView="visible"
