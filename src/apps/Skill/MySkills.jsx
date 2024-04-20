@@ -7,8 +7,8 @@ const MySkills = () => {
   const isAboveMediumScreen = useMediaQuery("(min-width:1060px)");
   return (
     <div className="container md:h-auto overflow-hidden">
-      <section id="about me" className="pt-10 pb-24">
-        <div className="md:flex-row flex flex-col items-center md:justify-between justify-center md:gap-16 mt-32 ">
+      <section id="about me" className="py-10">
+        <div className="md:flex-row flex flex-col items-center md:justify-between justify-center md:gap-16  ">
           <motion.div
             className="md:w-1/3 flex-1"
             initial="hidden"
@@ -20,11 +20,11 @@ const MySkills = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <p className="font-playfair  font-semibold text-4xl mb-5">
-              About <span className="text-red">Me</span>
+            <p className="font-playfair text-center md:text-start  font-semibold text-4xl mb-5">
+              About <span className="text-yellow">Me</span>
             </p>
-            <LineGradient width="w-[10rem]" />
-            <p className="mt-10 mb-7 ">
+            <LineGradient className="mx-auto md:mx-0" width="w-[10rem]" />
+            <p className="mt-10 mb-7 leading-7 tracking-wide">
               I am seeking an opportunity to extend my web development and
               design skills and knowledge, particularly in the Front-End field,
               with the goal of becoming a Junior React Front-End Developer. I am
@@ -79,7 +79,7 @@ const MySkills = () => {
           >
             <div>
               <p className="font-playfair font-semibold text-4xl ">
-                My <span className="text-red">Experiences</span>
+                My <span className="text-yellow">Experiences</span>
               </p>
               <div className="flex justify-center mt-5">
                 <LineGradient width="w-[14rem]" />

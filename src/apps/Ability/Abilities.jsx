@@ -22,7 +22,7 @@ const Abilities = () => {
           className="flex justify-center flex-col items-center"
         >
           <h1 className="font-playfair  font-semibold text-4xl mb-5">
-            My <span className="text-red"> Abilitities</span>
+            My <span className="text-yellow"> Abilitities</span>
           </h1>
           <LineGradient width="w-[13rem]" />
         </motion.div>
@@ -38,7 +38,7 @@ const Abilities = () => {
               transition: { staggerChildren: 0.2 },
             },
           }}
-          className="grid grid-cols-2  sm:grid-cols-3 justify-center md:grid-cols-5 xl:grid:cols-9 gap-4 mt-16 bg-indigo-500/20 rounded w-full h-full px-6  py-6 max-w-[1200px] mx-auto"
+          className="grid grid-cols-3 sm:grid-cols-4 justify-center md:grid-cols-5 xl:grid:cols-9 gap-4 mt-16 rounded w-full h-full px-6  py-6 max-w-[1200px] mx-auto"
         >
           {ablilities.map((item, i) => (
             <motion.div
@@ -51,7 +51,7 @@ const Abilities = () => {
                   y: 0,
                 },
               }}
-              className="bg-indigo-500/40 md:min-w-[150px] md:w-full md:px-4 md:mx-auto h-24 gap-2 rounded flex items-center justify-center flex-col "
+              className="bg-slate-100 shadow-sm dark:bg-indigo-500/40 md:min-w-[150px] md:w-full md:px-4 md:mx-auto h-24 gap-2 rounded flex items-center justify-center flex-col "
             >
               {item.icon}
               <p className="text-xl"> {item.title}</p>

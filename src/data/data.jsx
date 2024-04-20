@@ -22,6 +22,8 @@ import {
   SiTailwindcss,
   SiMui,
   SiMysql,
+  SiExpress,
+  SiNextdotjs,
 } from "react-icons/si";
 export const links = ["Home", "About Me", "Abilities", "Projects", "Contact"];
 export const socialLinks = [
@@ -139,7 +141,10 @@ export const ablilities = [
     icon: <SiRedux color="#764abc " className="w-8 h-8" />,
     title: "Redux",
   },
-
+  {
+    icon: <SiNextdotjs color="#000" className="w-8 h-8" />,
+    title: "Next.js",
+  },
   {
     icon: <SiFirebase color="#FFCB2B" className="w-8 h-8" />,
     title: "Firebase",
@@ -149,7 +154,7 @@ export const ablilities = [
     title: "NodeJS",
   },
   {
-    icon: <FaNodeJs color="#68A063" className="w-8 h-8" />,
+    icon: <SiExpress color="#68A063" className="w-8 h-8" />,
     title: "ExpressJS",
   },
   {

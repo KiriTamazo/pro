@@ -7,12 +7,12 @@ import { FaBars } from "react-icons/fa";
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggle, setIsMenuToggle] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width:768px");
-  const navbarBackground = isTopOfPage ? "" : "bg-glass";
+  const navbarBackground = isTopOfPage ? "" : "bg-glass bg-white";
 
   return (
     <>
       <header
-        className={` ${navbarBackground} z-40 w-full fixed top-0 left-0 py-3 md:py-6`}
+        className={` ${navbarBackground}  dark:bg-[#010026] transition-all duration-300 ease-linear  z-40 w-full fixed top-0 left-0 py-3 md:py-6`}
       >
         <nav className="container flex items-center justify-between mx-auto w-5/6">
           <h4 className="font-playfair text-3xl font-bold">LWHA</h4>
@@ -24,7 +24,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             />
           ) : (
             <button
-              className="rounded-full bg-red p-2 cursor-pointer"
+              className="rounded-full bg-yellow p-2 cursor-pointer"
               onClick={() => setIsMenuToggle(!isMenuToggle)}
             >
               <FaBars />

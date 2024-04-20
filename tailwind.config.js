@@ -1,5 +1,5 @@
-export default {
-
+module.exports = {
+  darkMode: ["class"],
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   mode: "jit",
   theme: {
@@ -25,7 +25,7 @@ export default {
       },
     },
     animation: {
-      'spin': 'spin 1s linear infinite',
+      spin: "spin 1s linear infinite",
     },
     screens: {
       xs: "480px",

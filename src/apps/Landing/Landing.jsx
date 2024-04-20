@@ -5,10 +5,10 @@ import { FaDownload } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 const Landing = () => {
   return (
-    <div className="container md:h-auto">
+    <div className="hero min-h-screen">
       <section
         id="home"
-        className="md:flex md:justify-between md:items-center  md:h-fit gap-16 mt-20 py-10 "
+        className="container md:mb-[6.5rem] md:pt-32 md:flex md:justify-between md:items-center  md:h-fit gap-16 py-10 "
       >
         {/* Image Section */}
         <motion.div
@@ -68,7 +68,7 @@ const Landing = () => {
             </p>
           </motion.div>
           <motion.div
-            className="flex flex-col md:flex-row mt-5 gap-8 justify-center md:justify-start"
+            className="flex flex-col md:flex-row mt-5 gap-4 md:gap-8 justify-center md:justify-start"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -81,7 +81,7 @@ const Landing = () => {
             <Link
               smooth={true}
               duration={500}
-              className="bg-blue md:text-start text-center text-deep-blue rounded-sm py-3   px-7  font-semibold hover:scale-90 hover:text-white transition duration-500 cursor-pointer"
+              className="bg-blue md:text-start text-center text-white dark:text-deep-blue rounded-sm py-3  px-7  font-semibold hover:scale-90 hover:text-white transition duration-500 cursor-pointer"
               to="contact"
             >
               Contact Me
@@ -92,19 +92,19 @@ const Landing = () => {
               download
               className="rounded-sm bg-blue py-0.5 px-0.5 hover:scale-90 transition duration-500"
             >
-              <div className="bg-deep-blue hover:text-yellow transition duration-500 w-full h-full flex rounded-sm items-center justify-center font-playfair py-3 px-10">
+              <div className="bg-white dark:bg-deep-blue hover:text-yellow transition duration-500 w-full h-full flex rounded-sm items-center justify-center font-playfair py-3 px-10">
                 <FaDownload className="mr-2" /> CV
               </div>
             </a>
           </motion.div>
           <motion.div
-            className="flex mt-5 justify-center md:justify-start"
+            className="flex md:mt-5 justify-center md:justify-start"
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.5, once: true }}
-            transition={{ delay: 0.4, duration: 0.5 }}
+            transition={{ delay: 0.8, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, y: -50 },
+              hidden: { opacity: 0, y: -20 },
               visible: {
                 opacity: 1,
                 y: 0,

@@ -53,7 +53,7 @@ const Projects = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl ">
-            <span className="text-red">Pro</span>jects
+            <span className="text-yellow">Pro</span>jects
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-[10rem]" />
@@ -65,7 +65,7 @@ const Projects = () => {
       <div className="flex justify-center ">
         <motion.div
           key="projects"
-          className="grid md:grid-cols-2 xl:grid-cols-3 gap-4"
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
           ref={ref}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}

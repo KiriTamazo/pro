@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
     <div className="relative group cursor-pointer  transition duration-500 ease-in-out  rounded-lg overflow-hidden">
       <img className="w-96 h-80 object-cover" src={img} alt={title} />
       <div
-        className="absolute  z-20 right-0 left-0 bottom-0  text-slate-900 translate-y-0 h-[45px] group-hover:-translate-y-52 xs:group-hover:-translate-y-48
+        className="absolute  z-20 right-0 left-0 bottom-0  text-slate-900 translate-y-0 h-[44px] group-hover:-translate-y-52 xs:group-hover:-translate-y-48
       transition duration-500 ease-in-out   "
       >
         <p className="bg-indigo-500 text-white text-xl font-semibold py-2 px-2 ">
