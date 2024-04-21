@@ -3,7 +3,7 @@ const Link = ({
   page,
   selectedPage,
   setSelectedPage,
-  activeClass = "text-yellow",
+  activeClass = "text-blue",
   sidebar,
 }) => {
   const lowerCasePage = page?.toLowerCase();
@@ -13,11 +13,12 @@ const Link = ({
       <Links
         spy={true}
         smooth={true}
-        offset={-150}
+        offset={-300}
         duration={500}
         activeClass={activeClass}
-        className={`${selectedPage === lowerCasePage ? "text-yellow" : ""}
-          hover:text-yellow ${
+        onSetActive={(data) => setSelectedPage(data)}
+        className={`${selectedPage === lowerCasePage ? "text-blue" : ""}
+          hover:text-blue ${
             sidebar && "hover:text-blue"
           } transition-all duration-500 cursor-pointer text-xl
           `}

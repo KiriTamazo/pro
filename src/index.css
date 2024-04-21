@@ -1,17 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base {
-  :root {
-    --bg-color: #fff;
-    --text-color: #252525;
-  }
-  .dark {
-    --bg-color: #010026;
-    --text-color: #fff;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +16,8 @@
   border-radius: 10px;
 }
 body {
-  overflow-x: hidden;
+  font-family: "Opensans";
+  @apply overflow-x-hidden transition-all duration-300 ease-linear;
 }
 html,
 body,

@@ -1,9 +1,7 @@
-import React, { useEffect, useLayoutEffect, useRef } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
-import Project from "./Project";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import LineGradient from "../../components/LineGradient";
 import { projects } from "../../data/data";
-import ProjectList from "./ProjectCard";
 import ProjectCard from "./ProjectCard";
 const item = {
   hidden: {
@@ -18,25 +16,38 @@ const item = {
     },
   },
 };
+const itemVariants = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: -50,
+  },
+};
 const Projects = () => {
   const ref = useRef(null);
   const inView = useInView(ref, {
     once: true,
     margin: "0px 100px -50px 0px",
   });
-  const itemVariants = {
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
-    hidden: {
-      opacity: 0,
-      y: -50,
-    },
-  };
+  // const itemVariants = {
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: {
+  //       duration: 0.5,
+  //     },
+  //   },
+  //   hidden: {
+  //     opacity: 0,
+  //     y: -50,
+  //   },
+  // };
   return (
     <section id="projects" className="container h-auto py-10">
       {/* Headings */}

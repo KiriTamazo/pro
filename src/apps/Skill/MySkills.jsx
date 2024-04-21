@@ -1,8 +1,7 @@
-import React from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import LineGradient from "../../components/LineGradient";
-import Timeline from "./Timeline";
+
 const MySkills = () => {
   const isAboveMediumScreen = useMediaQuery("(min-width:1060px)");
   return (
@@ -63,99 +62,6 @@ const MySkills = () => {
               />
             )}
           </motion.div>
-        </div>
-        {/* Experience */}
-        <div className="mt-32 gap-16 md:gap-32">
-          <motion.div
-            className="md:w-2/4 mb-16 mx-auto text-center"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, y: -50 },
-              visible: { opacity: 1, y: 0 },
-            }}
-          >
-            <div>
-              <p className="font-playfair font-semibold text-4xl ">
-                My <span className="text-yellow">Experiences</span>
-              </p>
-              <div className="flex justify-center mt-5">
-                <LineGradient width="w-[14rem]" />
-              </div>
-            </div>
-          </motion.div>
-          <Timeline />
-          {/* Experiences */}
-          {/* <motion.div
-            className=" mt-10"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.5, once: true }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, y: -50 },
-              visible: { opacity: 1, y: 0 },
-            }}
-          >
-            <div className="relative h-32">
-              <div className=" z-10 md:block flex flex-col justify-center items-center h-full cursor-pointer">
-                <p className="font-playfair font-semibold font-5xl">01</p>
-                <p className="font-playfair font-semibold font-3xl md:mt-5">
-                  NGS Dashboard
-                </p>
-              </div>
-              <div className="rounded w-full md:w-3/4 h-full bg-blue absolute right-0 top-0 z-[-1]">
-                <img
-                  className="rounded w-full h-full max-h-full md:max-h-max brightness-50 object-cover"
-                  src="./image/ngs-dashboard.png"
-                  alt="ngs-dashboard"
-                />
-              </div>
-            </div>
-            <p className="mt-5">
-              I helped develop the NGS group's dashboard by creating
-              visualizations and coding. I also provided feedback and
-              suggestions to improve the dashboard.
-            </p>
-          </motion.div> */}
-          {/* Innovative */}
-          {/* <motion.div
-            className=" mt-10"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.5, once: true }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, y: -50 },
-              visible: { opacity: 1, y: 0 },
-            }}
-          >
-            <div className="relative h-32">
-              <div className="z-10 md:block flex flex-col justify-center items-center h-full cursor-pointer">
-                <p className="font-playfair font-semibold font-5xl">02</p>
-                <p className="font-playfair font-semibold font-3xl md:mt-3">
-                  Shwe Real Estate
-                </p>
-              </div>
-              <div className=" rounded w-full md:w-3/4 h-full bg-red absolute right-0 top-0 z-[-1]">
-                <img
-                  src="./image/shwe-real-estate.png"
-                  className="brightness-50 rounded w-full h-full md:max-h-max max-h-full brightness object-cover"
-                  alt=""
-                />
-              </div>
-            </div>
-            <p className="mt-5">
-              I designed and implemented essential layout components, such as
-              the navbar, sidebar, header, breadcrumb, and footer, for both the
-              Shwe Real Estate website and dashboard. My contributions improved
-              the website's functionality and user experience through visually
-              appealing and user-friendly designs
-            </p>
-          </motion.div> */}
-          {/* Imaginative */}
         </div>
       </section>
     </div>

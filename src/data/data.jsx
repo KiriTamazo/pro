@@ -2,9 +2,7 @@ import {
   FaLinkedinIn,
   FaGithub,
   FaFacebookSquare,
-  FaInstagram,
   FaReact,
-  FaNodeJs,
   FaNode,
   FaPhp,
   FaLaravel,
@@ -25,7 +23,23 @@ import {
   SiExpress,
   SiNextdotjs,
 } from "react-icons/si";
-export const links = ["Home", "About Me", "Abilities", "Projects", "Contact"];
+import {
+  GoHome,
+  GoPerson,
+  GoProjectRoadmap,
+  GoRepo,
+  GoZap,
+} from "react-icons/go";
+import { LuContact2 } from "react-icons/lu";
+
+export const links = [
+  "Home",
+  "About Me",
+  "Experiences",
+  "Abilities",
+  "Projects",
+  "Contact",
+];
 export const socialLinks = [
   {
     id: 1,
@@ -45,12 +59,34 @@ export const socialLinks = [
     icon: <FaFacebookSquare />,
     to: "https://www.facebook.com/tama.kazo.94",
   },
-  // {
-  //   id: 4,
-  //   color: "#f09433",
-  //   icon: <FaInstagram />,
-  //   to: "https://www.instagram.com",
-  // },
+];
+export const mobileNavIcons = [
+  <GoHome />,
+  <GoPerson />,
+  <GoProjectRoadmap />,
+  <GoZap />,
+  <GoRepo />,
+  <LuContact2 />,
+];
+export const refrenceProjects = [
+  {
+    title: "Allure",
+    url: [
+      "https://allure-5atl.onrender.com/",
+      "https://github.com/KiriTamazo/Mern-Ecommerce-Website",
+    ],
+    img: "./image/allure.png",
+    desc: " Mern Ecommerce website with Authentication,Review the products and can Create and Delete Products",
+  },
+  {
+    title: "Marketing",
+    url: [
+      "https://kiritamazo.github.io/Marketing/",
+      "https://github.com/KiriTamazo/Marketing",
+    ],
+    img: "./image/marketing.png",
+    desc: "Static Website only using HTML,CSS , JavaScript and libraries",
+  },
 ];
 export const projects = [
   {

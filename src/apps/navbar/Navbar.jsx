@@ -3,12 +3,13 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import DesktopNav from "./DesktopNav";
 import Sidebar from "./Sidebar";
 import { FaBars } from "react-icons/fa";
+import { useScroll } from "framer-motion";
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggle, setIsMenuToggle] = useState(false);
-  const isAboveSmallScreens = useMediaQuery("(min-width:768px");
+  const isAboveSmallScreens = useMediaQuery("(min-width:840px");
   const navbarBackground = isTopOfPage ? "" : "bg-glass bg-white";
-
+  console.log(selectedPage, "page");
   return (
     <>
       <header
@@ -22,14 +23,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-          ) : (
-            <button
-              className="rounded-full bg-yellow p-2 cursor-pointer"
-              onClick={() => setIsMenuToggle(!isMenuToggle)}
-            >
-              <FaBars />
-            </button>
-          )}
+          ) : null}
         </nav>
       </header>
 

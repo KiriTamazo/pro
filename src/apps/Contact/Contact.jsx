@@ -29,7 +29,7 @@ const Contact = () => {
   };
   return (
     <div className="container md:h-auto grid items-center mb-4">
-      <section id="contact" className="pt-24 pb-16">
+      <section id="contact" className="pt-24 md:pb-16">
         {/* Heading */}
         <motion.div
           initial="hidden"
@@ -149,7 +149,7 @@ const Contact = () => {
                 className={`w-full  p-5 ${
                   !loading && isSubmitSuccessful
                     ? "bg-green-500 text-white hover:bg-green-500/80"
-                    : "bg-yellow  text-deep-blue hover:bg-red hover:text-white"
+                    : "bg-yellow  text-deep-blue hover:bg-blue"
                 } disabled:cursor-not-allowed mt-5 font-semibold  transition duration-500 rounded-md`}
                 type="submit"
               >

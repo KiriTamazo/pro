@@ -9,9 +9,11 @@ import MySkills from "./apps/Skill/MySkills";
 import Contact from "./apps/Contact/Contact";
 import Footer from "./apps/Footer/Footer";
 import Abilities from "./apps/Ability/Abilities";
+import RefrenceProjects from "./apps/Experiences/RefrenceProjects";
+import Experiences from "./apps/Experiences/Experiences";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState();
+  const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
@@ -35,13 +37,10 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <Landing setSelectedPage={setSelectedPage} />
-      {/* <LineGradient width=" md:w-auto" /> */}
       <MySkills />
-      {/* <LineGradient /> */}
+      <Experiences />
       <Abilities />
-      {/* <LineGradient /> */}
       <Projects />
-      {/* <LineGradient /> */}
       <Contact />
 
       <Footer />
