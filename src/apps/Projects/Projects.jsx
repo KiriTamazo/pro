@@ -63,8 +63,8 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl ">
-            <span className="text-yellow">Pro</span>jects
+          <p className="font-semibold text-4xl ">
+            <span className="dark:text-yellow">Pro</span>jects
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-[10rem]" />

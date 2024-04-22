@@ -11,6 +11,7 @@ import Footer from "./apps/Footer/Footer";
 import Abilities from "./apps/Ability/Abilities";
 import RefrenceProjects from "./apps/Experiences/RefrenceProjects";
 import Experiences from "./apps/Experiences/Experiences";
+import DarkMode from "./components/DarkMode";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -36,6 +37,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
+      <DarkMode />
       <Landing setSelectedPage={setSelectedPage} />
       <MySkills />
       <Experiences />

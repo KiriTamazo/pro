@@ -16,8 +16,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         className={` ${navbarBackground}  dark:bg-[#010026] transition-all duration-300 ease-linear  z-40 w-full fixed top-0 left-0 py-3 md:py-6`}
       >
         <nav className="container flex items-center justify-between mx-auto w-5/6">
-          <h4 className="font-playfair text-3xl font-bold">LWHA</h4>
-          {/* Desktop Nav <==> Mobile Nav */}
+          <h4 className="text-3xl font-bold">LWHA</h4>
           {isAboveSmallScreens ? (
             <DesktopNav
               selectedPage={selectedPage}

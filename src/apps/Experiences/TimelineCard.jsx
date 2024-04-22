@@ -10,7 +10,7 @@ const TimelineCard = ({ timeline }) => {
           <p className="font-semibold  dark:text-slate-300 text-xl">
             {timeline?.companyName}
           </p>
-          <time className="font-caveat font-medium text-yellow">
+          <time className="font-caveat font-medium dark:text-yellow">
             {timeline?.period}
           </time>
         </div>

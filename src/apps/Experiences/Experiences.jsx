@@ -19,8 +19,8 @@ const Experiences = () => {
           }}
         >
           <div>
-            <p className="font-playfair font-semibold text-4xl ">
-              My <span className="text-yellow">Experiences</span>
+            <p className="font-semibold text-4xl ">
+              My <span className="dark:text-yellow">Experiences</span>
             </p>
             <div className="flex justify-center mt-5">
               <LineGradient width="w-[14rem]" />

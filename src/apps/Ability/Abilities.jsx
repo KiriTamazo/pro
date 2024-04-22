@@ -21,8 +21,8 @@ const Abilities = () => {
           }}
           className="flex justify-center flex-col items-center"
         >
-          <h1 className="font-playfair  font-semibold text-4xl mb-5">
-            My <span className="text-yellow"> Abilitities</span>
+          <h1 className="font-semibold text-4xl mb-5">
+            My <span className="dark:text-yellow"> Abilitities</span>
           </h1>
           <LineGradient width="w-[13rem]" />
         </motion.div>

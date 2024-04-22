@@ -42,16 +42,16 @@ const Landing = () => {
             }}
           >
             <p className="text-center md:text-start"> Hello There! </p>
-            <p className="xl:text-6xl text-4xl font-playfair z-10 text-center md:text-start leading-[3rem]">
+            <p className="xl:text-6xl text-4xl  z-10 text-center md:text-start leading-[3rem]">
               I'm La Woon <br />
               <span
-                className="text-yellow mt-4
+                className="text-blue dark:text-yellow mt-4
             "
               >
                 Htet Aung
               </span>
             </p>
-            <p className="font-semibold font-opensans text-xl mt-5 mb-7  text-center md:text-start">
+            <p className="font-semibold text-xl mt-5 mb-7  text-center md:text-start">
               I Am{" "}
               <TypeAnimation
                 sequence={[
@@ -92,7 +92,7 @@ const Landing = () => {
               download
               className="rounded-sm bg-blue py-0.5 px-0.5 hover:scale-90 transition duration-500"
             >
-              <div className="bg-white dark:bg-deep-blue hover:text-yellow transition duration-500 w-full h-full flex rounded-sm items-center justify-center font-playfair py-3 px-10">
+              <div className="bg-white dark:bg-deep-blue hover:text-yellow transition duration-500 w-full h-full flex rounded-sm items-center justify-center  py-3 px-10">
                 <FaDownload className="mr-2" /> CV
               </div>
             </a>

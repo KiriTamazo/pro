@@ -42,8 +42,8 @@ const Contact = () => {
           }}
         >
           <div className="mb-20">
-            <p className="text-4xl font-playfair font-semibold text-center">
-              <span className="text-yellow">Contact Me</span>
+            <p className="text-4xl font-semibold text-center">
+              <span className="dark:text-yellow">Contact Me</span>
             </p>
             <div className="flex md:justify-end my-5">
               <LineGradient width="mx-auto w-2/4 max-w-[180px] md:max-w-[200px]" />
@@ -53,7 +53,7 @@ const Contact = () => {
         {/* Form & Img */}
         <div className="md:flex md:items-center md:justify-between gap-16 mt-5">
           <motion.div
-            className="basis-1/2 flex justify-center"
+            className="basis-1/2 flex "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -66,7 +66,7 @@ const Contact = () => {
             <img
               src="./image/contact.jpg"
               alt="contact"
-              className="rounded-md"
+              className="rounded-md h-full"
             />
           </motion.div>
 
@@ -89,7 +89,7 @@ const Contact = () => {
                 <label>Name</label>
                 <input
                   type="text"
-                  className="rounded-md w-full text-slate-800 bg-white font-semibold placeholder-opaque-black p-3"
+                  className="rounded-md w-full text-slate-800 bg-slate-100 dark:text-slate-200 dark:bg-indigo-500/10 font-semibold placeholder-opaque-black dark:placeholder-gray-500/80 p-3"
                   placeholder="Name"
                   {...register("name", { required: true, maxLength: 100 })}
                 />
@@ -106,7 +106,7 @@ const Contact = () => {
                 <label>Email</label>
                 <input
                   type="text"
-                  className="rounded-md w-full text-slate-800 bg-white font-semibold placeholder-opaque-black p-3"
+                  className="rounded-md w-full text-slate-800 bg-slate-100 dark:text-slate-200 dark:bg-indigo-500/10 font-semibold placeholder-opaque-black dark:placeholder-gray-500/80 p-3"
                   placeholder="Email"
                   {...register("email", {
                     required: true,
@@ -125,7 +125,7 @@ const Contact = () => {
               <div className="space-y-1">
                 <label>Message</label>
                 <textarea
-                  className="rounded-md w-full text-slate-800 bg-white font-semibold placeholder-opaque-black p-3"
+                  className="rounded-md w-full text-slate-800 bg-slate-100 dark:text-slate-200 dark:bg-indigo-500/10 font-semibold placeholder-opaque-black dark:placeholder-gray-500/80 p-3"
                   name="message"
                   placeholder="MESSAGE"
                   rows="4"
@@ -149,8 +149,8 @@ const Contact = () => {
                 className={`w-full  p-5 ${
                   !loading && isSubmitSuccessful
                     ? "bg-green-500 text-white hover:bg-green-500/80"
-                    : "bg-yellow  text-deep-blue hover:bg-blue"
-                } disabled:cursor-not-allowed mt-5 font-semibold  transition duration-500 rounded-md`}
+                    : "bg-blue  text-deep-blue hover:bg-blue/80"
+                } disabled:cursor-not-allowed mt-5 font-medium capitalize  transition duration-500 rounded-md`}
                 type="submit"
               >
                 {loading ? (

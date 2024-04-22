@@ -70,22 +70,22 @@ export const mobileNavIcons = [
 ];
 export const refrenceProjects = [
   {
-    title: "Allure",
-    url: [
-      "https://allure-5atl.onrender.com/",
-      "https://github.com/KiriTamazo/Mern-Ecommerce-Website",
-    ],
+    title: "Techmarket",
     img: "./image/allure.png",
-    desc: " Mern Ecommerce website with Authentication,Review the products and can Create and Delete Products",
+    url: "http://techmarketmm.com",
+    desc: "Saas Landing Page which support subdomain, custom domain for users",
   },
   {
-    title: "Marketing",
-    url: [
-      "https://kiritamazo.github.io/Marketing/",
-      "https://github.com/KiriTamazo/Marketing",
-    ],
+    title: "Techmarket's Agency",
+    url: "http://waiyan.techmarketmm.com",
     img: "./image/marketing.png",
-    desc: "Static Website only using HTML,CSS , JavaScript and libraries",
+    desc: "Ecommerce website with admin dashboard for user management,",
+  },
+  {
+    title: "Creative Coder Myanmar",
+    url: "http://creativecodermm.com",
+    img: "./image/marketing.png",
+    desc: "Learning Platform for developers",
   },
 ];
 export const projects = [

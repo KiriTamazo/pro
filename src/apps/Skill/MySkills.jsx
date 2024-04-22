@@ -19,8 +19,8 @@ const MySkills = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <p className="font-playfair text-center md:text-start  font-semibold text-4xl mb-5">
-              About <span className="text-yellow">Me</span>
+            <p className=" text-center md:text-start  font-semibold text-4xl mb-5">
+              About <span className="dark:text-yellow">Me</span>
             </p>
             <LineGradient className="mx-auto md:mx-0" width="w-[10rem]" />
             <p className="mt-10 mb-7 leading-7 tracking-wide">

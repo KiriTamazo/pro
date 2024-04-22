@@ -30,7 +30,7 @@ const Sidebar = ({ setSelectedPage, selectedPage }) => {
           exit: { y: 100, opacity: 0 },
         }}
         transition={{ duration: 0.5 }}
-        className="fixed w-full px-1 mx-auto py-2 z-[50] bottom-0 left-0 right-0 text-slate-700 bg-slate-200/40 flex items-center justify-evenly backdrop-filter backdrop-blur-lg bg-opacity-10 "
+        className="fixed min-h-[4.5rem] w-full px-1 mx-auto py-2 z-[50] bottom-0 left-0 right-0 text-slate-700 bg-slate-200/40 dark:bg-indigo-500/40 dark:text-slate-200 flex items-center justify-evenly backdrop-filter backdrop-blur-lg bg-opacity-10 "
       >
         {links.map((link, i) => {
           const selected = selectedPage === link.toLowerCase();
@@ -55,7 +55,7 @@ const Sidebar = ({ setSelectedPage, selectedPage }) => {
                 <span
                   className={`${
                     selected
-                      ? "bg-blue/80 [&>svg]:text-slate-700 rounded-full "
+                      ? "bg-blue/80 [&>svg]:text-slate-700  rounded-full "
                       : ""
                   } w-full min-w-[50px]  py-1 flex items-center justify-center transition-all duration-300 ease-linear`}
                 >
@@ -64,7 +64,7 @@ const Sidebar = ({ setSelectedPage, selectedPage }) => {
                 <p
                   className={`${
                     selected
-                      ? "not-sr-only opacity-1 translate-y-0"
+                      ? "not-sr-only opacity-1 translate-y-0 dark:text-slate-200"
                       : "sr-only opacity-0 translate-y-5"
                   } font-medium text-[.5rem] transition-all duration-300 ease-linear`}
                 >

@@ -12,7 +12,7 @@ const Project = ({ project }) => {
     <a href={url} target="_blank" rel="noreferrer">
       <motion.div variants={projectVariant} className="relative h-[350px]">
         <div className={overlayStyles}>
-          <p className="text-2xl font-playfair">{title}</p>
+          <p className="text-2xl">{title}</p>
           <div className="mt-7 flex gap-4 text-2xl">
             {icons.map((icon, i) => {
               return icon;

@@ -25,7 +25,7 @@ const RefrenceProjects = () => {
   return (
     <section className="mt-16">
       <motion.div
-        className="md:w-2/4 mb-16 mx-auto text-center"
+        className="md:w-2/4  mb-16 mx-auto text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
@@ -36,11 +36,11 @@ const RefrenceProjects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl ">
-            Re<span className="text-yellow">frences </span>
+          <p className="font-semibold text-4xl ">
+            Re<span className="dark:text-yellow">frences </span>
           </p>
           <div className="flex justify-center mt-5">
-            <LineGradient width="w-[9rem]" />
+            <LineGradient width="w-[10rem]" />
           </div>
           <p className="mt-4">
             This is the list of projects that i mainly contributed
@@ -50,7 +50,7 @@ const RefrenceProjects = () => {
       {/* Refrence Projects */}
       <motion.div
         key="projects"
-        className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
+        className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 "
         ref={ref}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
@@ -67,7 +67,11 @@ const RefrenceProjects = () => {
         }}
       >
         {refrenceProjects.map((project, i) => (
-          <motion.div key={i} variants={itemVariants}>
+          <motion.div
+            className="mx-auto w-full min-h-[22.5rem]"
+            key={i}
+            variants={itemVariants}
+          >
             <RefrenceCard key={i} project={project} />
           </motion.div>
         ))}
