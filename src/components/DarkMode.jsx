@@ -6,10 +6,8 @@ const DarkMode = () => {
     localStorage.getItem("lwha-theme") || "light"
   );
   const toggleTheme = () => {
-    console.log("toggle dark mode");
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
-  console.log(theme);
   useEffect(() => {
     const body = document.querySelector("body");
     if (theme === "light") {

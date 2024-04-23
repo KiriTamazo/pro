@@ -71,24 +71,84 @@ export const mobileNavIcons = [
 export const refrenceProjects = [
   {
     title: "Techmarket",
-    img: "./image/allure.png",
+    img: "./image/tec-landing.png",
     url: "http://techmarketmm.com",
-    desc: "Saas Landing Page which support subdomain, custom domain for users",
+    desc: "Saas Landing Page for showcasing company's services, features and price",
+    techstacks: [
+      {
+        title: "react",
+        color: "rgb(19 161 198)",
+        backgroundColor: "rgb(97, 219, 251,var(--tw-bg-opacity))",
+      },
+      {
+        title: "tailwind",
+        color: "rgb(0, 127, 255)",
+        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
+      },
+      {
+        title: "laravel",
+        color: "rgb(240, 83, 64)",
+        backgroundColor: "rgb(240, 83, 64,var(--tw-bg-opacity))",
+      },
+    ],
   },
   {
     title: "Techmarket's Agency",
     url: "http://waiyan.techmarketmm.com",
-    img: "./image/marketing.png",
-    desc: "Ecommerce website with admin dashboard for user management,",
+    img: "./image/tec-agency.png",
+    desc: "Fully Functional Ecommerce website with admin dashboard support for managing and customizing website datas",
+    techstacks: [
+      {
+        title: "react",
+        color: "rgb(19 161 198)",
+        backgroundColor: "rgb(97, 219, 251,var(--tw-bg-opacity))",
+      },
+      {
+        title: "tailwind",
+        color: "rgb(0, 127, 255)",
+        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
+      },
+      {
+        title: "laravel",
+        color: "rgb(240, 83, 64)",
+        backgroundColor: "rgb(240, 83, 64,var(--tw-bg-opacity))",
+      },
+    ],
   },
   {
     title: "Creative Coder Myanmar",
     url: "http://creativecodermm.com",
-    img: "./image/marketing.png",
-    desc: "Learning Platform for developers",
+    img: "./image/creative-coder.png",
+    desc: "Learning Platform offering screencast features to stream seamless lesson videos for developers",
+    techstacks: [
+      {
+        title: "vue",
+        color: "rgb(66, 184, 131)",
+        backgroundColor: "rgb(66, 184, 131,var(--tw-bg-opacity))",
+      },
+      {
+        title: "tailwind",
+        color: "rgb(0, 127, 255)",
+        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
+      },
+      {
+        title: "laravel",
+        color: "rgb(240, 83, 64)",
+        backgroundColor: "rgb(240, 83, 64,var(--tw-bg-opacity))",
+      },
+    ],
   },
 ];
 export const projects = [
+  {
+    title: "Event Horizon",
+    url: [
+      "https://event-horizon-inky.vercel.app/",
+      "https://github.com/LW-Htet-Aung/event-horizon/",
+    ],
+    img: "./image/event-horizon.png",
+    desc: "Nextjs Event Booking website which include ticket crud operations for admin and checkout features for user",
+  },
   {
     title: "Allure",
     url: [
