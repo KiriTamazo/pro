@@ -148,6 +148,49 @@ export const projects = [
     ],
     img: "./image/event-horizon.png",
     desc: "Nextjs Event Booking website which include ticket crud operations for admin and checkout features for user",
+    techstacks: [
+      {
+        title: "react",
+        color: "rgb(19 161 198)",
+        backgroundColor: "rgb(97, 219, 251,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Nextjs",
+        color: "rgb(0 0 0)",
+        backgroundColor: "rgb(0, 0, 0,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Typescript",
+        color: "rgb(0, 122, 204)",
+        backgroundColor: "rgb(0, 122, 204,var(--tw-bg-opacity))",
+      },
+      {
+        title: "tailwind",
+        color: "rgb(0, 127, 255)",
+        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
+      },
+
+      {
+        title: "React Hook Form",
+        color: "rgb(236, 89, 144)",
+        backgroundColor: "rgb(236, 89, 144,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Zod",
+        color: "rgb(48,104,183)",
+        backgroundColor: "rgb(48,104,183,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Framer Motion",
+        color: "rgb(0,0,0)",
+        backgroundColor: "rgb(0,0,0,var(--tw-bg-opacity))",
+      },
+      {
+        title: "MongoDB",
+        color: "rgb(77, 179, 61)",
+        backgroundColor: "rgb(77, 179, 61,var(--tw-bg-opacity))",
+      },
+    ],
   },
   {
     title: "Allure",
@@ -157,33 +200,100 @@ export const projects = [
     ],
     img: "./image/allure.png",
     desc: " Mern Ecommerce website with Authentication,Review the products and can Create and Delete Products",
+    techstacks: [
+      {
+        title: "react",
+        color: "rgb(0,0,0)",
+        backgroundColor: "rgb(97, 219, 251,var(--tw-bg-opacity))",
+      },
+      {
+        title: "tailwind",
+        color: "rgb(0, 127, 255)",
+        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Redux",
+        color: "rgb(118, 74, 188)",
+        backgroundColor: "rgb(118, 74, 188,var(--tw-bg-opacity))",
+      },
+      {
+        title: "React Router",
+        color: "rgb(244 66 80)",
+        backgroundColor: "rgb(244, 66, 80,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Nodejs",
+        color: "rgb(77, 179, 61)",
+        backgroundColor: "rgb(77, 179, 61,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Express",
+        color: "rgb(77, 179, 61)",
+        backgroundColor: "rgb(77, 179, 61,var(--tw-bg-opacity))",
+      },
+      {
+        title: "MongoDB",
+        color: "rgb(77, 179, 61)",
+        backgroundColor: "rgb(77, 179, 61,var(--tw-bg-opacity))",
+      },
+    ],
+  },
+  {
+    title: "React Todo List ",
+    url: [
+      "https://react-todo-list-app-iota.vercel.app/",
+      "https://github.com/LW-Htet-Aung/React-Todo-List-App/tree/todo-list",
+    ],
+    img: "./image/todo-list.png",
+    desc: "React Todo List App with animation and redux for state management",
+    techstacks: [
+      {
+        title: "react",
+        color: "rgb(19 161 198)",
+        backgroundColor: "rgb(97, 219, 251,var(--tw-bg-opacity))",
+      },
+      {
+        title: "tailwind",
+        color: "rgb(0, 127, 255)",
+        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Redux",
+        color: "rgb(118, 74, 188)",
+        backgroundColor: "rgb(118, 74, 188,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Framer Motion",
+        color: "rgb(0,0,0)",
+        backgroundColor: "rgb(0,0,0,var(--tw-bg-opacity))",
+      },
+    ],
   },
   {
     title: "Marketing",
     url: [
-      "https://kiritamazo.github.io/Marketing/",
+      "https://lw-htet-aung.github.io/Marketing/",
       "https://github.com/KiriTamazo/Marketing",
     ],
     img: "./image/marketing.png",
     desc: "Static Website only using HTML,CSS , JavaScript and libraries",
-  },
-  {
-    title: "MeteorV2",
-    url: [
-      "https://kiritamazo.github.io/MeteorV2/",
-      "https://github.com/KiriTamazo/Meteor.github.io",
+    techstacks: [
+      {
+        title: "Html",
+        color: "rgb(240, 101, 41)",
+        backgroundColor: "rgb(97, 219, 251,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Css",
+        color: "rgb(41, 101, 241)",
+        backgroundColor: "rgb(41, 101, 241,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Javascript",
+        color: "rgb(169 152 33)",
+        backgroundColor: "rgb(240, 219, 79,var(--tw-bg-opacity))",
+      },
     ],
-    img: "./image/meteor.png",
-    desc: "Static Website only using HTML,CSS , JavaScript and libraries",
-  },
-  {
-    title: "Omnifood",
-    url: [
-      "https://kiritamazo.github.io/OminiFood.github.io/",
-      "https://github.com/KiriTamazo/OminiFood.github.io",
-    ],
-    img: "./image/ominifood.png",
-    desc: "Static Website only using HTML,CSS , JavaScript and libraries",
   },
   {
     title: "Nike Store Clone",
@@ -193,6 +303,71 @@ export const projects = [
     ],
     img: "./image/nike-clone.png",
     desc: "React website using Tailwindcss for styling and Redux for state management",
+    techstacks: [
+      {
+        title: "react",
+        color: "rgb(19 161 198)",
+        backgroundColor: "rgb(97, 219, 251,var(--tw-bg-opacity))",
+      },
+      {
+        title: "tailwind",
+        color: "rgb(0, 127, 255)",
+        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
+      },
+    ],
+  },
+  {
+    title: "MeteorV2",
+    url: [
+      "https://lw-htet-aung.github.io/Meteor.github.io/",
+      "https://github.com/KiriTamazo/Meteor.github.io",
+    ],
+    img: "./image/meteor.png",
+    desc: "Static Website only using HTML, CSS , JavaScript and libraries",
+    techstacks: [
+      {
+        title: "Html",
+        color: "rgb(240, 101, 41)",
+        backgroundColor: "rgb(97, 219, 251,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Css",
+        color: "rgb(41, 101, 241)",
+        backgroundColor: "rgb(41, 101, 241,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Javascript",
+        color: "rgb(169 152 33)",
+        backgroundColor: "rgb(240, 219, 79,var(--tw-bg-opacity))",
+      },
+    ],
+  },
+
+  {
+    title: "Omnifood",
+    url: [
+      "https://lw-htet-aung.github.io/OminiFood.github.io/",
+      "https://github.com/KiriTamazo/OminiFood.github.io",
+    ],
+    img: "./image/ominifood.png",
+    desc: "Static Website only using HTML, CSS , JavaScript and libraries",
+    techstacks: [
+      {
+        title: "Html",
+        color: "rgb(240, 101, 41)",
+        backgroundColor: "rgb(97, 219, 251,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Css",
+        color: "rgb(41, 101, 241)",
+        backgroundColor: "rgb(41, 101, 241,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Javascript",
+        color: "rgb(169 152 33)",
+        backgroundColor: "rgb(240, 219, 79,var(--tw-bg-opacity))",
+      },
+    ],
   },
 ];
 

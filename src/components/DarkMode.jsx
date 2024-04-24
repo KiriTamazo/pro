@@ -3,7 +3,7 @@ import { GoMoon, GoSun } from "react-icons/go";
 
 const DarkMode = () => {
   const [theme, setTheme] = useState(
-    localStorage.getItem("lwha-theme") || "dark"
+    localStorage.getItem("lwha-theme") || "light"
   );
 
   const toggleTheme = () => {

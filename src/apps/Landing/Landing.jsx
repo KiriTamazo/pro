@@ -5,10 +5,10 @@ import { FaDownload } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 const Landing = () => {
   return (
-    <div className="hero min-h-screen">
+    <div className="hero min-h-full">
       <section
         id="home"
-        className="container md:mb-[6.5rem] md:pt-32 md:flex md:justify-between md:items-center  md:h-fit gap-16 py-10 "
+        className="container md:mb-[6.5rem] md:pt-32 md:flex md:justify-between md:items-center h-fit gap-16 py-10 "
       >
         {/* Image Section */}
         <motion.div
@@ -92,7 +92,7 @@ const Landing = () => {
               download
               className="rounded-sm bg-blue py-0.5 px-0.5 hover:scale-90 transition duration-500"
             >
-              <div className="bg-white dark:bg-deep-blue hover:text-yellow transition duration-500 w-full h-full flex rounded-sm items-center justify-center  py-3 px-10">
+              <div className="bg-white dark:bg-deep-blue  transition-transform duration-500 w-full h-full flex rounded-sm items-center justify-center  py-3 px-10">
                 <FaDownload className="mr-2" /> CV
               </div>
             </a>

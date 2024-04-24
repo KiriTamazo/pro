@@ -1,4 +1,5 @@
 import { TbArrowUpRight } from "react-icons/tb";
+import Badge from "../../components/Badge";
 
 const RefrenceCard = ({ project }) => {
   return (
@@ -23,13 +24,12 @@ const RefrenceCard = ({ project }) => {
       </div>
       <div className="flex justify-start gap-3 mb-2 px-2">
         {project.techstacks.map(({ title, backgroundColor, color }, i) => (
-          <span
+          <Badge
+            title={title}
             key={i}
-            style={{ backgroundColor, color }}
-            className="capitalize rounded w-fit px-2 p-1 bg-opacity-20 backdrop-blur-md"
-          >
-            {title}
-          </span>
+            backgroundColor={backgroundColor}
+            color={color}
+          />
         ))}
       </div>
     </a>
