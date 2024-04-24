@@ -72,7 +72,7 @@ const RefrenceProjects = () => {
             key={i}
             variants={itemVariants}
           >
-            <RefrenceCard key={i} project={project} />
+            <RefrenceCard project={project} />
           </motion.div>
         ))}
       </motion.div>

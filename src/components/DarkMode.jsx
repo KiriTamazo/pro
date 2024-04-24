@@ -3,19 +3,30 @@ import { GoMoon, GoSun } from "react-icons/go";
 
 const DarkMode = () => {
   const [theme, setTheme] = useState(
-    localStorage.getItem("lwha-theme") || "light"
+    localStorage.getItem("lwha-theme") || "dark"
   );
+
   const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    setTheme((prev) => {
+      if (prev === "light") {
+        localStorage.setItem("lwha-theme", "dark");
+        return "dark";
+      } else {
+        localStorage.setItem("lwha-theme", "light");
+        return "light";
+      }
+    });
   };
   useEffect(() => {
     const body = document.querySelector("body");
-    if (theme === "light") {
+    const currentTheme = localStorage.getItem("lwha-theme");
+
+    if (!currentTheme) localStorage.setItem("lwha-theme", theme);
+
+    if (currentTheme === "dark") {
       body.classList.add("dark");
-      localStorage.setItem("lwha-theme", "light");
     } else {
-      body.classList.toggle("dark");
-      localStorage.setItem("lwha-theme", "dark");
+      body.classList.remove("dark");
     }
   }, [theme]);
   return (
