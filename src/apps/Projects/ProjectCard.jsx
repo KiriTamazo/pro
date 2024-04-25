@@ -1,8 +1,6 @@
 import { TbArrowUpRight } from "react-icons/tb";
 import Badge from "../../components/Badge";
-import { GoEye } from "react-icons/go";
-import { FaEye } from "react-icons/fa";
-import { LuCode, LuCode2 } from "react-icons/lu";
+import { LuCode2 } from "react-icons/lu";
 const ProjectCard = ({ project }) => {
   const { title, img, url, desc } = project;
   return (

@@ -90,6 +90,11 @@ export const refrenceProjects = [
         color: "rgb(240, 83, 64)",
         backgroundColor: "rgb(240, 83, 64,var(--tw-bg-opacity))",
       },
+      {
+        title: "MySql",
+        color: "rgb(0 ,117, 143)",
+        backgroundColor: "rgb(0, 117, 143,var(--tw-bg-opacity))",
+      },
     ],
   },
   {
@@ -109,9 +114,19 @@ export const refrenceProjects = [
         backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
       },
       {
+        title: "Redux",
+        color: "rgb(118, 74, 188)",
+        backgroundColor: "rgb(118, 74, 188,var(--tw-bg-opacity))",
+      },
+      {
         title: "laravel",
         color: "rgb(240, 83, 64)",
         backgroundColor: "rgb(240, 83, 64,var(--tw-bg-opacity))",
+      },
+      {
+        title: "MySql",
+        color: "rgb(0 ,117, 143)",
+        backgroundColor: "rgb(0, 117, 143,var(--tw-bg-opacity))",
       },
     ],
   },
@@ -136,6 +151,11 @@ export const refrenceProjects = [
         color: "rgb(240, 83, 64)",
         backgroundColor: "rgb(240, 83, 64,var(--tw-bg-opacity))",
       },
+      {
+        title: "MySql",
+        color: "rgb(0 ,117 ,143)",
+        backgroundColor: "rgb(0 ,117, 143,var(--tw-bg-opacity))",
+      },
     ],
   },
 ];
@@ -156,8 +176,8 @@ export const projects = [
       },
       {
         title: "Nextjs",
-        color: "rgb(0 0 0)",
-        backgroundColor: "rgb(0, 0, 0,var(--tw-bg-opacity))",
+        color: "rgb(255 255 255)",
+        backgroundColor: "rgb(0, 0, 0,.9)",
       },
       {
         title: "Typescript",
@@ -182,8 +202,8 @@ export const projects = [
       },
       {
         title: "Framer Motion",
-        color: "rgb(0,0,0)",
-        backgroundColor: "rgb(0,0,0,var(--tw-bg-opacity))",
+        color: "rgb(255 255 255)",
+        backgroundColor: "rgb(0, 0, 0,.9)",
       },
       {
         title: "MongoDB",
@@ -203,7 +223,7 @@ export const projects = [
     techstacks: [
       {
         title: "react",
-        color: "rgb(0,0,0)",
+        color: "rgb(19 161 198)",
         backgroundColor: "rgb(97, 219, 251,var(--tw-bg-opacity))",
       },
       {
@@ -211,11 +231,7 @@ export const projects = [
         color: "rgb(0, 127, 255)",
         backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
       },
-      // {
-      //   title: "Redux",
-      //   color: "rgb(118, 74, 188)",
-      //   backgroundColor: "rgb(118, 74, 188,var(--tw-bg-opacity))",
-      // },
+
       {
         title: "React Router",
         color: "rgb(244 66 80)",
@@ -223,8 +239,8 @@ export const projects = [
       },
       {
         title: "React Hook Form",
-        color: "rgb(0, 127, 255)",
-        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
+        color: "rgb(236, 89, 144)",
+        backgroundColor: "rgb(236, 89, 144,var(--tw-bg-opacity))",
       },
       {
         title: "Yup",
@@ -233,8 +249,8 @@ export const projects = [
       },
       {
         title: "React Query",
-        color: "rgb(0, 127, 255)",
-        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
+        color: "rgb(255, 65, 84)",
+        backgroundColor: "rgb(255, 65, 84,var(--tw-bg-opacity))",
       },
       {
         title: "Nodejs",
@@ -248,8 +264,8 @@ export const projects = [
       },
       {
         title: "MongoDB",
-        color: "rgb(77, 179, 61)",
-        backgroundColor: "rgb(77, 179, 61,var(--tw-bg-opacity))",
+        color: "rgb(88, 150, 54)",
+        backgroundColor: "rgb(88, 150, 54,var(--tw-bg-opacity))",
       },
     ],
   },
@@ -279,8 +295,8 @@ export const projects = [
       },
       {
         title: "Framer Motion",
-        color: "rgb(0,0,0)",
-        backgroundColor: "rgb(0,0,0,var(--tw-bg-opacity))",
+        color: "rgb(255 255 255)",
+        backgroundColor: "rgb(0, 0, 0,.9)",
       },
     ],
   },

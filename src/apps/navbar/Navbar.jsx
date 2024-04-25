@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import DesktopNav from "./DesktopNav";
-import Sidebar from "./Sidebar";
-import { FaBars } from "react-icons/fa";
-import { useScroll } from "framer-motion";
+import MobileNavbar from "./MobileNavbar";
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggle, setIsMenuToggle] = useState(false);
@@ -28,7 +26,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
       </header>
 
       {!isAboveSmallScreens && (
-        <Sidebar
+        <MobileNavbar
           setIsMenuToggle={setIsMenuToggle}
           isMenuToggle={isMenuToggle}
           selectedPage={selectedPage}

@@ -3,7 +3,7 @@ import { links, mobileNavIcons } from "../../data/data";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-scroll";
 
-const Sidebar = ({ setSelectedPage, selectedPage }) => {
+const MobileNavbar = ({ setSelectedPage, selectedPage }) => {
   const [showMobileNav, setShowMobileNav] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -66,7 +66,7 @@ const Sidebar = ({ setSelectedPage, selectedPage }) => {
                     selected
                       ? "not-sr-only opacity-1 translate-y-0 dark:text-slate-200"
                       : "sr-only opacity-0 translate-y-5"
-                  } font-medium text-[.5rem] transition-all duration-300 ease-linear`}
+                  } font-medium text-[.5rem] xs:text-[.7rem] transition-all duration-300 ease-linear`}
                 >
                   {link}
                 </p>
@@ -102,4 +102,4 @@ const Sidebar = ({ setSelectedPage, selectedPage }) => {
     // </aside>
   );
 };
-export default Sidebar;
+export default MobileNavbar;

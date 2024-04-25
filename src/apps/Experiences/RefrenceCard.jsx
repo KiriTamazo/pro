@@ -6,7 +6,7 @@ const RefrenceCard = ({ project }) => {
     <a
       target="_blank"
       href={project.url}
-      className="bg-slate-100 group shadow-sm hover:scale-105 transition-all duration-300 ease-linear cursor-pointer flex flex-col dark:bg-indigo-500/20 max-w-[22rem] min-h-[22rem] md:min-h-[23.5rem] lg:min-h-[22rem] p-2 rounded-md mx-auto "
+      className="bg-slate-100 h-full group shadow-sm hover:scale-105 transition-all duration-300 ease-linear cursor-pointer flex flex-col dark:bg-indigo-500/20 max-w-[22rem] min-h-[22rem] md:min-h-[23.5rem] lg:min-h-[22rem] p-2 rounded-md mx-auto "
     >
       <img
         className="rounded-md min-w-[10rem] w-full h-[10rem] object-fill"
@@ -22,7 +22,7 @@ const RefrenceCard = ({ project }) => {
           {project.desc}
         </p>
       </div>
-      <div className="flex justify-start gap-3 mb-2 px-2">
+      <div className="flex flex-wrap justify-start gap-3 mb-2 px-2">
         {project.techstacks.map(({ title, backgroundColor, color }, i) => (
           <Badge
             title={title}
