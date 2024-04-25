@@ -76,7 +76,7 @@ const Projects = () => {
       <div className="flex justify-center ">
         <motion.div
           key="projects"
-          className="grid lg:grid-cols-2  gap-4 lg:gap-8"
+          className="grid md:grid-cols-2  gap-4 lg:gap-8"
           ref={ref}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}

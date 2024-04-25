@@ -199,7 +199,7 @@ export const projects = [
       "https://github.com/KiriTamazo/Mern-Ecommerce-Website",
     ],
     img: "./image/allure.png",
-    desc: " Mern Ecommerce website with Authentication,Review the products and can Create and Delete Products",
+    desc: " Mern Ecommerce website with Authentication, Review the products and can Create and Delete Products",
     techstacks: [
       {
         title: "react",
@@ -207,19 +207,34 @@ export const projects = [
         backgroundColor: "rgb(97, 219, 251,var(--tw-bg-opacity))",
       },
       {
-        title: "tailwind",
+        title: "Sass",
         color: "rgb(0, 127, 255)",
         backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
       },
-      {
-        title: "Redux",
-        color: "rgb(118, 74, 188)",
-        backgroundColor: "rgb(118, 74, 188,var(--tw-bg-opacity))",
-      },
+      // {
+      //   title: "Redux",
+      //   color: "rgb(118, 74, 188)",
+      //   backgroundColor: "rgb(118, 74, 188,var(--tw-bg-opacity))",
+      // },
       {
         title: "React Router",
         color: "rgb(244 66 80)",
         backgroundColor: "rgb(244, 66, 80,var(--tw-bg-opacity))",
+      },
+      {
+        title: "React Hook Form",
+        color: "rgb(0, 127, 255)",
+        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
+      },
+      {
+        title: "Yup",
+        color: "rgb(0, 127, 255)",
+        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
+      },
+      {
+        title: "React Query",
+        color: "rgb(0, 127, 255)",
+        backgroundColor: "rgb(0, 127, 255,var(--tw-bg-opacity))",
       },
       {
         title: "Nodejs",

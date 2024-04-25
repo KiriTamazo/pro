@@ -81,7 +81,7 @@ const Landing = () => {
             <Link
               smooth={true}
               duration={500}
-              className="bg-blue md:text-start text-center text-white dark:text-deep-blue rounded-sm py-3  px-7  font-semibold hover:scale-90 hover:text-white transition duration-500 cursor-pointer"
+              className="bg-blue md:text-start text-center text-deep-blue rounded-sm py-4  px-7  font-semibold hover:scale-90 hover:text-white transition duration-500 cursor-pointer"
               to="contact"
             >
               Contact Me
